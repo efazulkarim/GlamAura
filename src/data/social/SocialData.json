@@ -1,0 +1,34 @@
+{
+    "fb": {
+        "url": "https://facebook.com/",
+        "icon": "fab fa-facebook-f"
+    },
+    "twitter": {
+        "url": "https://twitter.com/",
+        "icon": "fab fa-twitter"
+    },
+    "instagram": {
+        "url": "https://www.instagram.com/",
+        "icon": "fab fa-instagram"
+    },
+    "linked": {
+        "url": "https://www.linkedin.com/",
+        "icon": "fab fa-linkedin-in"
+    },
+    "yt": {
+        "url": "https://www.youtube.com/",
+        "icon": "fab fa-youtube"
+    },
+    "pinterest": {
+        "url": "https://www.pinterest.com/",
+        "icon": "fab fa-pinterest"
+    },
+    "discord": {
+        "url": "https://discord.com/",
+        "icon": "fab fa-discord"
+    },
+    "slack": {
+        "url": "https://slack.com/",
+        "icon": "fab fa-slack"
+    }
+}

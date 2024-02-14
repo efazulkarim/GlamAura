@@ -1,0 +1,122 @@
+.subscribe-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.75);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    z-index: 999999999;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+    &.show-popup {
+        opacity: 1;
+        visibility: visible;
+    }
+    .close-popup {
+        position: absolute;
+        top: 0.8rem;
+        right: 1rem;
+        font-size: 1.6rem;
+        line-height: 1;
+        cursor: pointer;
+        z-index: 9;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+    .subscribe-popup-inner {
+        position: relative;
+        width: 100%;
+        max-width: 78rem;
+        @media #{$md-layout} {
+            max-width: 50rem;
+        }
+        @media #{$sm-layout} {
+            max-width: 28rem;
+        }
+        .img-container {
+            height: 100%;
+            @media (max-width: 991px) {
+                display: none;
+            }
+        }
+        .weekly-newsletter {
+            height: 100%;
+            align-items: center;
+            display: flex;
+            padding: 43px 51px;
+            background-color: var(--color-lightest);
+            border-radius: 0 var(--radius) var(--radius) 0;
+
+            @media #{$md-layout} {
+                padding: 30px;
+                border-radius: var(--radius);
+            }
+            @media #{$sm-layout} {
+                padding: 30px;
+                border-radius: var(--radius);
+            }
+            .newsletter-content {
+                text-align: center;
+                max-width: 300px;
+                margin-left: auto;
+                margin-right: auto;
+                @media #{$sm-layout} {
+                    text-align: left;
+                }
+            }
+        }
+    }
+    .close-button {
+        cursor: pointer;
+    }
+}
+
+
+
+.subscription-form {
+    .form-group {
+        position: relative;
+        input {
+            border-radius: 100px;
+            background: var(--color-white);
+            padding-right: 130px;
+            padding-left: 30px;
+            @media #{$sm-layout} {
+                padding-right: 30px;
+            }
+        }
+        .axil-button {
+            position: absolute;
+            right: 0;
+            padding: 0 20px;
+            width: auto;
+            @media #{$sm-layout} {
+                position: static;
+                margin-top: 20px;
+            }
+            &:hover {
+                transform: inherit;
+            }
+        }
+        p {
+            &.close-button {
+                @media #{$sm-layout} {
+                    display: none;
+                }
+            }
+        }
+    }
+}

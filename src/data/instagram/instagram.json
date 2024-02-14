@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "image": "/images/small-images/instagram-md-01.webp",
+        "url": "#"
+    },
+    {
+        "id": 2,
+        "image": "/images/small-images/instagram-md-02.webp",
+        "url": "#"
+    },
+    {
+        "id": 3,
+        "image": "/images/small-images/instagram-md-03.webp",
+        "url": "#"
+    },
+    {
+        "id": 4,
+        "image": "/images/small-images/instagram-md-04.webp",
+        "url": "#"
+    },
+    {
+        "id": 5,
+        "image": "/images/small-images/instagram-md-05.webp",
+        "url": "#"
+    },
+    {
+        "id": 6,
+        "image": "/images/small-images/instagram-md-06.webp",
+        "url": "#"
+    }
+]

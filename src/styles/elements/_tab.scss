@@ -1,0 +1,60 @@
+/*---------------------
+    Tab Styles  
+----------------------*/
+
+.axil-tab-button {
+    @extend %liststyle;
+    margin: -10px;
+    border: 0 none;
+    @media #{$sm-layout} {
+        margin: -5px;
+    }
+    .nav-item {
+        margin: 10px;
+        @media #{$sm-layout} {
+            margin: 5px;
+        }
+         
+        .nav-link {
+            border: 1px solid var(--color-lighter);
+            border-radius: var(--radius-small);
+            padding: 0 18px;
+            height: 46px;
+            display: inline-block;
+            line-height: 46px;
+            font-weight: var(--p-bold);
+            font-size: var(--font-size-b1);
+            color: var(--color-midgray);
+            background: var(--color-white);
+            outline: none;
+            cursor: pointer;
+            @media #{$sm-layout} {
+                padding: 0 13px;
+                font-size: var(--font-size-b3);
+            }
+            &.active {
+                @extend %box-shadow;
+                border: 1px solid transparent;
+                color: var(--color-gray);
+            }
+        }
+    }
+}
+
+
+// Modern Post Tab Content 
+.single-tab-content {
+    margin-top: 40px;
+}
+.single-tab-content{
+    display: block;
+    height: 0;
+}
+.single-tab-content.active{
+    height: auto;
+}
+
+// Trend Post Tab 
+.trend-tab-content {
+    margin-top: 10px;
+}

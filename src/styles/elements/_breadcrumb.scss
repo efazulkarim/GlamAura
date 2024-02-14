@@ -1,0 +1,71 @@
+/*-----------------------
+Breadcrumb Styles  
+------------------------*/
+.breadcrumb-style-1 {
+    padding: 80px 0;
+    .page-title {
+        margin-bottom: 0;
+        text-transform: capitalize;
+    }
+}
+
+.my_switcher {
+    position: fixed;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+    z-index: 1035;
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li {
+            a {
+                position: relative;
+                font-family: var(--font-primary);
+                font-size: 1.4rem;
+                line-height: 2.2rem;
+                color: var(--color-primary);
+                font-weight: 600;
+                text-transform: uppercase;
+                display: block;
+                border: 2px solid var(--color-primary);
+                padding: 5px 13px;
+                display: flex;
+                align-items: center;
+                span {
+
+                }
+                &.active {
+                    color: #ffffff;
+                    background: var(--color-primary);
+                    border-color: var(--color-primary);
+                }
+            }
+            &:first-child {
+                a {
+                    border-right-width: 1px;
+                    border-radius: 100px 0 0 100px;
+                    padding-left: 15px;
+                    span {
+
+                    }
+                }
+            }
+            &:last-child {
+                a {
+                    border-left-width: 1px;
+                    border-radius: 0 100px 100px 0;
+                    padding-right: 15px;
+                    span {
+
+                    }
+                }
+            }
+        }
+    }
+}
+

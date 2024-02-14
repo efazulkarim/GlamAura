@@ -1,0 +1,265 @@
+/*------------------------
+Social Share Styles  
+---------------------------*/
+ul {
+    &.social-icon {
+        margin: -5px;
+        @extend %liststyle;
+        display: flex;
+        flex-wrap: wrap;
+        @media #{$lg-layout} {
+            margin: -3px;
+        }
+        li {
+            margin: 5px;
+            @media #{$lg-layout} {
+                margin: 3px;
+            }
+            a {
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                border-radius: 100%;
+                background: var(--color-lightest);
+                display: block;
+                text-align: center;
+                font-size: 14px;
+                color: var(--color-gray);
+                @extend %transition;
+                &:hover {
+                    background: var(--color-primary) !important;
+                    color: var(--color-white) !important;
+                }
+            }
+        }
+
+        &.color-tertiary {
+            li {
+                a {
+                    color: var(--color-tertiary);
+                    &:hover {
+                        color: var(--color-white);
+                    }
+                }
+            }
+        }
+
+        &.md-size {
+            li {
+                a {
+                    width: 40px;
+                    height: 40px;
+                    line-height: 40px;
+                }
+            }
+        }
+
+        &.icon-rounded-transparent{
+            li {
+                a {
+                    background: transparent;
+                    border: 1px solid var(--color-lighter);
+                    &:hover {
+                        color: var(--color-white);
+                        background-color: var(--color-primary);
+                        border-color: var(--color-primary);
+                    }
+                }
+            }
+        }
+        &.color-white {
+            li {
+                a {
+                    background: #ffffff;
+                    color: #050505;
+                    &:hover {
+                        color: var(--color-white);
+                        background-color: var(--color-primary);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*-------------------------
+    Social With Text  
+--------------------------*/
+.axil-social-wrapper {
+    padding: 35px 50px;
+    @media #{$md-layout} {
+        padding: 35px 30px;
+    }
+    @media #{$sm-layout} {
+        padding: 35px 30px;
+    }
+    @media #{$large-mobile} {
+        padding: 28px 15px;
+    }
+}
+
+ul {
+    &.social-with-text {
+        margin: -5px;
+        @extend %liststyle;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        @media #{$md-layout} {
+            justify-content: flex-start;
+        }
+        @media #{$sm-layout} {
+            justify-content: flex-start;
+        }
+        li {
+            margin: 5px;
+            a {
+                i {
+                    width: 50px;
+                    height: 50px;
+                    line-height: 50px;
+                    border-radius: 100%;
+                    background: var(--color-lightest);
+                    display: inline-block;
+                    text-align: center;
+                    color: var(--color-gray);
+                    margin-right: 18px;
+                    font-size: var(--font-size-b3);
+                    @extend %transition;
+                    @media #{$lg-layout} {
+                        margin-right: 12px;
+                    }
+                    @media #{$md-layout} {
+                        margin-right: 12px;
+                    }
+                    @media #{$sm-layout} {
+                        margin-right: 8px;
+                        width: 40px;
+                        height: 40px;
+                        line-height: 40px;
+                    }
+                }
+                span {
+                    font-weight: var(--p-medium);
+                    font-size: var(--font-size-b2);
+                    line-height: 20px;
+                    display: inline-block;
+                    @extend %transition;
+                }
+                // &:hover {
+                //     i {
+                //         background: var(--color-primary);
+                //         color: var(--color-white);
+                //     }
+                // }
+            }
+
+            
+            &.twitter {
+                &:hover {
+                    a {
+                        i {
+                            background: var(--color-twitter);
+                            color: var(--color-white);
+                        }
+                    }
+                }
+                
+            }
+            &.facebook {
+                &:hover {
+                    a {
+                        i {
+                            background: var(--color-facebook);
+                            color: var(--color-white);
+                        }
+                    }
+                }
+            }
+            &.instagram {
+                &:hover {
+                    a {
+                        i {
+                            background: var(--color-instagram);
+                            color: var(--color-white);
+                        }
+                    }
+                }
+            }
+            &.youtube {
+                &:hover {
+                    a {
+                        i {
+                            background: var(--color-youtube);
+                            color: var(--color-white);
+                        }
+                    }
+                }
+            }
+            &.pinterest {
+                &:hover {
+                    a {
+                        i {
+                            background: var(--color-pinterest);
+                            color: var(--color-white);
+                        }
+                    }
+                }
+            }
+            &.discord {
+                
+                &:hover {
+                    a {
+                        i {
+                            background: var(--color-discord);
+                            color: var(--color-white);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// Social Share Transparent 
+ul {
+    &.social-share-transparent {
+        @extend %liststyle;
+        margin: 0 -5px;
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            margin: 0 5px;
+            a {
+                color: var(--color-extra02);
+                font-size: var(--font-size-b3);
+                line-height: var(--line-height-b3);
+                display: block;
+                @extend %transition;
+                &:hover {
+                    color: var(--color-primary) !important;
+                }
+            }
+        }
+    }
+    &.size-md {
+        li {
+            a {
+                font-size: 16px;
+                line-height: 22px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+

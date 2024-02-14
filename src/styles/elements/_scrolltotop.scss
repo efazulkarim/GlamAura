@@ -1,0 +1,33 @@
+/* Scroll To Top  */
+
+#backto-top {
+    display: inline-block;
+    background-color: var(--color-primary);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 100%;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s,
+    opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+#backto-top::after {
+    content: "\f106";
+    font-style: normal;
+    color: #fff;
+    font-family: var(--font-awesome);
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 48px;
+}
+#backto-top.show {
+    opacity: 1;
+    visibility: visible;
+}

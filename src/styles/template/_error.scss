@@ -1,0 +1,40 @@
+/* Error Area  */
+
+.bg_image--4 {
+    background-position: bottom center;
+    @media #{$md-layout} {
+        background-position: 26% 33%;
+    }
+    @media #{$sm-layout} {
+        background-position: 26% 33%;
+    }
+}
+
+
+.error-area {
+    height: 856px;
+    display: flex;
+    align-items: center;
+    background-position: bottom center;
+    @media #{$md-layout} {
+        height: auto;
+        padding: 150px 0;
+    }
+    @media #{$sm-layout} {
+        height: auto;
+        padding: 100px 0;
+    }
+    .inner {
+        
+        img {
+            padding-bottom: 40px !important;
+        }
+        .title {
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 30px;
+        }
+    }
+}
+

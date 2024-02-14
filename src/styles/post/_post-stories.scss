@@ -1,0 +1,23 @@
+/* Post Stories  */
+
+.post-stories {
+    .post-thumbnail {
+        a {
+            display: block;
+            img {
+                border-radius: 10px;
+            }
+        }
+    }
+    .post-content {
+        padding-top: 20px;
+        .title {
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+
+
+

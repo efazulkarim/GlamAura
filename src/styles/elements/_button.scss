@@ -1,0 +1,71 @@
+/*---------------------
+ * Button
+-----------------------*/
+a {
+    &.axil-link-button {
+        text-decoration: none;
+        @extend %color-primary;
+        @extend %transition;
+        font-weight: var(--p-medium);
+        font-size: var(--font-size-b2);
+        line-height: 22px;
+
+        &:hover {
+            color: var(--color-secondary);
+        }
+    }
+}
+
+
+
+
+a,
+button {
+    &.axil-button {
+        background: var(--color-primary);
+        color: var(--color-white);
+        font-weight: var(--p-medium);
+        font-size: var(--font-size-b2);
+        display: inline-block;
+        border: 2px solid var(--color-primary);
+        @extend %transition;
+        padding: 0 30px;
+        height: 50px;
+        line-height: 46px;
+        &.button-rounded {
+            border-radius: 500px;
+        }
+        &:hover {
+            
+        }
+        &.color-secondary-alt {
+            background: var(--color-secondary-alt);
+            border-color: var(--color-secondary-alt);
+            &:hover {
+                color: var(--color-secondary-alt);
+                background: transparent;
+            }
+        }
+        .hover-flip-item {
+            span {
+                &::after ,
+                &::before{
+                    color: #ffffff;
+                }
+            }
+        }
+
+    }
+}
+
+.link-inner {
+    display: inline-block;
+}
+
+
+
+
+
+
+
+

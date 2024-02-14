@@ -1,0 +1,118 @@
+/*---------------------
+    Video Styles  
+----------------------*/
+a,
+button {
+    &.video-popup {
+        display: block;
+        position: relative;
+        margin: 0 auto;
+        width: 80px;
+        height: 80px !important;
+        border-radius: 50% !important;
+        background: #fff;
+        -webkit-transition: all 1s cubic-bezier(0, 0, 0.2, 1);
+        -o-transition: all 1s cubic-bezier(0, 0, 0.2, 1);
+        transition: all 1s cubic-bezier(0, 0, 0.2, 1);
+        -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+       
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            transform: translate(-3px, -7px);
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid transparent;
+            border-left: 10px solid var(--color-tertiary);
+        }
+       
+        &.position-top-center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            border: 0 none;
+            margin-left: -40px;
+            margin-top: -40px;
+            -webkit-transition: all 1s cubic-bezier(0, 0, 0.2, 1);
+            -o-transition: all 1s cubic-bezier(0, 0, 0.2, 1);
+            transition: all 1s cubic-bezier(0, 0, 0.2, 1);
+            -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+        }
+    
+        &.size-medium {
+            width: 50px;
+            height: 50px !important;
+            &.position-top-center {
+                margin-left: -25px;
+                margin-top: -25px;
+            }
+        }
+
+        &.icon-color-secondary {
+            &::before {
+                border-left: 10px solid var(--color-secondary);
+            }
+        }
+
+        &:hover {
+            transform: scale3d(1.15, 1.15, 1.15);
+        }
+    }
+}
+
+// Support 
+
+// Issue One
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .slide-style-5 .inner {
+        padding-right: 15%;
+    }
+}
+@media only screen and (max-width: 991px) and (min-width: 768px){
+    .axil-slide.slide-style-5 .contact-form-wrapper .axil-contact-form.contact-form-style-1 {
+        max-width: initial;
+    }
+    .axil-slide.slide-style-5 {
+        padding-top: 128px;
+        padding-bottom: 62px;
+        margin-bottom: 0;
+        flex-wrap: wrap;
+    }
+    .axil-slide.slide-style-5 .contact-form-wrapper {
+        position: static;
+        right: 0;
+        bottom: 0;
+        padding: 0 15px;
+        margin: 0 auto;
+        margin-top: 40px;
+    } 
+    .axil-contact-form.contact-form-style-1 {
+        padding: 25px 20px;
+        padding-left: 20px;
+        max-width: inherit;
+        padding-bottom: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .axil-contact-form.contact-form-style-1::before {
+        display: none;
+    }
+    .axil-contact-form.contact-form-style-1::after {
+        transform: none;
+    }
+}
+//  Issue Two
+.axil-blog-details-area .axil-blog-author .author-thumb img {
+    min-width: 100px;
+}
+
+// Issue Three
+.header-style-4 .mainmenu-wrapepr .mainmenu-nav,
+.header-style-4 .mainmenu-wrapepr .ax-header-button {
+    flex-basis: inherit;
+}
+

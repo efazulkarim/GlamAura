@@ -1,0 +1,62 @@
+/*--------------------
+    Dark Version  
+--------------------*/
+
+.bg-color-black {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .h1,
+    .h2,
+    .h3,
+    .h4,
+    .h5,
+    .h6 {
+        color: var(--color-white);
+    }
+
+    ul {
+        &.post-meta-list {
+            li {
+                color: var(--color-midgray);
+            }
+        }
+    }
+
+    ul {
+        &.social-share-transparent  {
+            li {
+                a {
+                    color: var(--color-midgray);
+                    &:hover {
+                        color: var(--color-primary);
+                    }
+                }
+            }
+        }
+    }
+
+    .content-block {
+        .post-meta {
+            .hover-flip-item {
+                span {
+                    &::before {
+                        color: var(--color-white);
+                    }
+                    &::after {
+                        color: var(--color-primary);
+                    }
+                }
+            }
+        }
+    }  
+
+}
+
+
+
+
+

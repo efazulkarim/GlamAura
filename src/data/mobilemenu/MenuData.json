@@ -1,0 +1,100 @@
+[
+    {
+        "label": "Home",
+        "path": "#",
+        "submenu": [
+            {
+                "sublabel": "Home Default",
+                "subpath": "/"
+            },
+            {
+                "sublabel": "Home Creative Blog",
+                "subpath": "/creative-blog"
+            },
+            {
+                "sublabel": "Home SEO Blog",
+                "subpath": "/seo-blog"
+            },
+            {
+                "sublabel": "Home Tech Blog",
+                "subpath": "/tech-blog"
+            },
+            {
+                "sublabel": "Home Lifestyle Blog",
+                "subpath": "/lifestyle-blog"
+            }
+        ]
+    },
+    {
+        "label": "Posts",
+        "path": "#",
+        "submenu": [
+            {
+                "sublabel": "Post Format Standard",
+                "subpath": "/post/beauty-of-deep-space-billions-of-galaxies-in-the-universe."
+            },
+            {
+                "sublabel": "Post Format Video",
+                "subpath": "/post/flutter-the-good-the-bad-and-the-ugly"
+            },
+            {
+                "sublabel": "Post Format Gallery",
+                "subpath": "/post/fashion-young-handsome-man-in-casual-watch"
+            },
+            {
+                "sublabel": "Post Format Audio",
+                "subpath": "/post/lightweight-grippable-and-ready-to-go"
+            },
+            {
+                "sublabel": "Post Format Quote",
+                "subpath": "/post/new-freehand-templates-built-for-the-whole-team"
+            }
+        ]
+    },
+    {
+        "label": "Pages",
+        "path": "#",
+        "submenu": [
+            {
+                "sublabel": "Post List",
+                "subpath": "/post-list"
+            },
+            {
+                "sublabel": "Post Archive",
+                "subpath": "/category/design"
+            },
+            {
+                "sublabel": "Author Page",
+                "subpath": "/author/rose-mary"
+            },
+            {
+                "sublabel": "About Page",
+                "subpath": "/about"
+            },
+            {
+                "sublabel": "Contact Us",
+                "subpath": "/contact"
+            },
+            {
+                "sublabel": "404 Page",
+                "subpath": "/404"
+            },
+            {
+                "sublabel": "Maintenance",
+                "subpath": "/maintenance"
+            },
+            {
+                "sublabel": "Privacy Policy",
+                "subpath": "/privacy-policy"
+            }
+        ]
+    },
+    {
+        "label": "Lifestyle",
+        "path": "/lifestyle-blog" 
+    },
+    {
+        "label": "Gadgets",
+        "path": "/tech-blog"
+    }
+]

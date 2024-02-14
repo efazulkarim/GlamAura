@@ -1,0 +1,121 @@
+/*********************************************************************************
+	Template Name: Blogar Personal Blog Template
+	Template URL: https://axilthemes.com/demo/template/splash/blogar/index.html
+	Description: Blogar Personal Blog HTML5 Template
+	Author: Axilthemes
+	Author URL: https://axilthemes.com/
+	Version: 1.1.1
+
+**********************************************************************************/
+
+/**************************************************************
+	
+	STYLESHEET INDEXING
+	|
+	|
+	|___ Default Styles
+	|	|
+	|	|___ Reset Styles
+	|	|___ Typography
+	|	|___ Animations
+	|	|___ Utilities
+	|
+	|
+	|___Elements Styles
+	|	|___ Button
+	|	|___ Section Title
+	|
+	|
+	|___Blocks Styles
+	|	|___ Header 
+	|	|___ Navigation 
+	|	|___ Banner
+	|	|___ Footer
+	|
+	|
+	|___ END STYLESHEET INDEXING
+
+***************************************************************/
+
+/**************************************
+    Default Styles
+***************************************/
+@import 'default/variables';
+@import 'default/mixins';
+@import 'default/reset';
+@import 'default/typography';
+@import 'default/extend';
+@import 'default/animations';
+@import 'default/shortcode';
+@import 'default/spacing';
+@import 'default/common';
+@import 'default/forms';
+
+
+
+
+/**************************************
+	Elements Styles
+***************************************/
+@import 'elements/button';
+@import 'elements/cursor';
+@import 'elements/section-title';
+@import 'elements/tab';
+@import 'elements/category';
+@import 'elements/social';
+@import 'elements/video';
+@import 'elements/scrolltotop';
+@import 'elements/slick';
+@import 'elements/breadcrumb';
+@import 'elements/contact';
+@import 'elements/pagination';
+
+
+
+
+/**************************************
+	Header Styles
+***************************************/
+@import 'header/header';
+@import 'header/nav';
+@import 'header/subscribe';
+@import 'header/mobilemenu';
+
+
+
+
+/**************************************
+	Post Styles
+***************************************/
+@import 'post/post-list';
+@import 'post/sidebar';
+@import 'post/post-details';
+@import 'post/post-format';
+@import 'post/post-stories';
+@import 'post/comment';
+
+
+/**************************************
+	Template Styles
+***************************************/
+@import 'template/banner';
+@import 'template/instagram';
+@import 'template/darkversion';
+@import 'template/author';
+@import 'template/animation-image-hover';
+@import 'template/error';
+@import 'template/maintanence';
+
+
+/**************************************
+	Footer Styles
+***************************************/
+@import 'footer/footer';
+@import 'footer/dark';
+
+/**************************************
+	Rtl Styles
+***************************************/
+// @import 'rtl/rtl';
+
+

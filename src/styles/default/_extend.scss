@@ -1,0 +1,85 @@
+/*=====================
+All Extend Here
+=======================*/
+
+//===== Ncc Colors =====//
+%color-primary {
+    color: var(--color-primary)
+}
+
+%color-secondary {
+    color: var(--color-secondary)
+}
+
+%color-tertiary {
+    color: var(--color-tertiary)
+}
+
+.primary-color {
+    color: var(--color-primary) !important;
+}
+
+.secondary-color {
+    color: var(--color-secondary) !important;
+}
+
+.tertiary-color {
+    color: var(--color-tertiary) !important;
+}
+
+//===== BG Ncc Colors =====//
+%bg-primary-color {
+    background: var(--color-primary);
+}
+
+%bg-secondary-color {
+    background: var(--color-secondary)
+}
+
+%bg-tertiary-color {
+    background: var(--color-tertiary)
+}
+
+
+
+// Others 
+
+%box-shadow {
+    box-shadow: var(--shadow-primary);
+}
+
+%radius {
+    border-radius: var(--radius);
+}
+
+.radius {
+    @extend %radius;
+}
+
+
+/*=============== Style Css =============*/
+
+%liststyle {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.liststyle {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+%transition {
+    transition: var(--transition);
+}
+
+%bgImagePosition {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.bgImagePosition {
+    @extend %bgImagePosition;
+}

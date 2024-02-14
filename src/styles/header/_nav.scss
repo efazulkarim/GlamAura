@@ -1,0 +1,194 @@
+/*--------------------------
+Navigation Css  
+---------------------------*/
+.mainmenu-nav {
+    ul {
+        &.mainmenu {
+            @extend %liststyle;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+            flex-wrap: wrap;
+            > li {
+                margin: 0 18px;
+                position: relative;
+                @media #{$laptop-device} {
+                    margin: 0 12px;
+                }
+                @media #{$lg-layout} {
+                    margin: 0 12px;
+                }
+                > a {
+                    font-size: var(--font-size-b2);
+                    line-height: var(--line-height-b2);
+                    color: var(--color-midgray);
+                    font-weight: var(--p-medium);
+                    @extend %transition;
+                    height: 80px;
+                    display: block;
+                    line-height: 80px;
+                    position: relative;
+                    &::after {
+                        position: absolute;
+                        bottom: 0;
+                        width: 0;
+                        height: 4px;
+                        background: var(--color-primary);
+                        content: "";
+                        @extend %transition;
+                        left: 0;
+                        border-radius: 10px 10px 0 0;
+                    }
+                    
+                    &:hover {
+                        @extend %color-primary;
+                    }
+                }
+                &:hover {
+                    > a {
+                        &::after {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                &.menu-item-has-children {
+                    .axil-submenu {
+                        @extend %liststyle;
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        background: #ffffff;
+                        z-index: -1;
+                        opacity: 0;
+                        visibility: hidden;
+                        min-width: 240px;
+                        padding: 20px;
+                        border-radius: 0 0 10px 10px;
+                        box-shadow: var(--shadow-primary);
+                        @extend %transition;
+                        li {
+                            a {
+                                font-size: var(--font-size-b2);
+                                line-height: var(--line-height-b2);
+                                color: var(--color-midgray);
+                                font-weight: var(--p-medium);
+                                @extend %transition;
+
+                                &.hover-flip-item-wrapper {
+                                    span {
+                                        &::before {
+                                            color: var(--color-midgray);
+                                        }
+                                        
+                                        &::after {
+                                            color: var(--color-primary);
+                                        }
+                                    }
+                                }
+                            }
+                            &:hover {
+                                > a {
+                                    color: var(--color-primary);
+                                }
+                            }
+                        }
+                    }
+                    &:hover {
+                        .axil-submenu {
+                            opacity: 1;
+                            visibility: visible;
+                            z-index: 9;
+                        }
+                    }
+                }
+
+                // Mega Menu 
+                &.megamenu-wrapper {
+                    position: static;
+                    .megamenu-sub-menu {
+                        @extend %liststyle;
+                        box-sizing: border-box;
+                        position: absolute;
+                        background: #fff;
+                        // width: 100%;
+                        left: 0;
+                        right: 0;
+                        opacity: 0;
+                        visibility: hidden;
+                        @extend %transition;
+                        min-width: 1230px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        border-radius: 0 0 10px 10px;
+                        box-shadow: var(--shadow-primary);
+
+                        .megamenu-item {
+                            display: flex;
+                            margin: 0;
+
+                            .axil-vertical-nav {
+                                min-width: 279px;
+                                width: auto;
+                                border-right: 1px solid #CED0D4;
+                                padding: 30px;
+                                @extend %liststyle;
+                                .vertical-nav-item {
+                                    margin: 10px 0;
+                                    a {
+                                        color: var(--color-midgray);
+                                        font-size: 16px;
+                                        line-break: 20px;
+                                        display: block;
+                                        &.hover-flip-item-wrapper {
+                                            span {
+                                                &::before {
+                                                    color: var(--color-midgray);
+                                                }
+                                                &::after {
+                                                    color: var(--color-primary);
+                                                }
+                                            }
+                                        }
+                                    }
+                                    &.active {
+                                        a {
+                                            color: var(--color-primary);
+                                            &.hover-flip-item-wrapper {
+                                                span {
+                                                    &::before {
+                                                        color: var(--color-primary);
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    &:first-child {
+                                        margin-top: 0;
+                                    }
+                                    &:last-child {
+                                        margin-bottom: 0;
+                                    }
+                                }
+                            }
+
+                            .axil-vertical-nav-content {
+                                width: 83.589%;
+                                padding: 30px;
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        .megamenu-sub-menu {
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

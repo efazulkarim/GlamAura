@@ -1,0 +1,37 @@
+
+.contact-form--1 {
+    .form-group {
+        margin-bottom: 20px;
+    }
+}
+p.form-messege {
+    padding-top: 23px;
+    &.error {
+        color: #f10;
+    }
+    &.success {
+        color: green;
+    }
+}
+.form-submit {
+    display: inline-block;
+}
+.form-submit button.axil-button {
+    width: auto;
+}
+
+.error-msg {
+    margin-top: 20px;
+    p {
+        color: #f10;
+    }
+}
+.success-msg {
+    margin-top: 20px;
+    p {
+        color: green;
+    }
+}
+
+
+

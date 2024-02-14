@@ -1,0 +1,68 @@
+/* ---------------------
+Instagram Styles  
+-------------------------*/
+
+.instagram-post-list {
+    @extend %liststyle;
+    margin: -9px;
+    display: flex;
+    flex-wrap: wrap;
+    .single-post {
+        padding: 9px;
+        flex-basis: 16.66%;
+        margin: 0;
+        @media #{$sm-layout} {
+            flex-basis: 33.33%;
+        }
+        @media #{$large-mobile} {
+            flex-basis: 50%;
+        }
+        a {
+            display: block;
+            position: relative;
+            @extend %radius;
+            overflow: hidden;
+            span {
+                display: block !important;
+            }
+            img {
+                @extend %radius;
+                width: 100%;
+                transition: 0.5s;
+            }
+
+            .instagram-button {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) scale(0);
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                border-radius: 100%;
+                background: var(--color-lightest);
+                display: block;
+                text-align: center;
+                font-size: 14px;
+                color: var(--color-gray);
+                @extend %transition;
+                opacity: 0;
+                &:hover {
+                    background: var(--color-primary);
+                    color: var(--color-white);
+                }
+            }
+
+            &:hover {
+                .instagram-button  {
+                    opacity: 1;
+                    transform: translate(-50%, -50%) scale(1);
+                }
+                img {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+

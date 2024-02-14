@@ -1,0 +1,97 @@
+/* ----------------------
+    Maintanence Area  
+------------------------*/
+
+
+
+.maintanence-area {
+    display: flex;
+    align-items: center;
+    height: 770px;
+    @media #{$md-layout} {
+        height: auto;
+        padding: 100px 0;
+    }
+    @media #{$sm-layout} {
+        height: auto;
+        padding: 100px 0;
+    }
+    .content {
+        .logo {
+            margin-bottom: 40px;
+            @media #{$md-layout} {
+                margin-bottom: 20px;
+            }
+            @media #{$sm-layout} {
+                margin-bottom: 20px;
+            }
+            a {
+                display: block;
+                img {
+                    max-height: 40px;
+                }
+            }
+        }
+        .title {
+            margin-bottom: 30px;
+            @media #{$md-layout} {
+                margin-bottom: 20px;
+            }
+            @media #{$sm-layout} {
+                margin-bottom: 20px;
+            }
+        }
+        h5 {
+            margin-bottom: 16px;
+        }
+        p {
+            margin-bottom: 40px;
+            @media #{$md-layout} {
+                margin-bottom: 20px;
+            }
+            @media #{$sm-layout} {
+                margin-bottom: 20px;
+            }
+        }
+        .inner {
+            margin-bottom: 34px;
+            @media #{$md-layout} {
+                margin-bottom: 20px;
+            }
+            @media #{$sm-layout} {
+                margin-bottom: 20px;
+            }
+        }
+        .subscription-form {
+            .form-group {
+                max-width: 470px;
+                input {
+                    background: #F0F2F5;
+                    color: #65676B;
+                }
+            }
+        }
+    }
+}
+
+.axil-privacy-area {
+    .section-title {
+        .title {
+            display: inline-block;
+            padding-bottom: 16px;
+            border-bottom: 3px solid var(--color-primary);
+            margin-bottom: 60px;
+        }
+    }
+}
+
+.maintanence-area .content .logo a img.light-logo {
+    display: none;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,107 @@
+/* -------------------------
+Category Styles 
+------------------------- */
+
+.list-categories {
+    margin: -15px;
+    margin-bottom: -30px;
+    @media #{$lg-layout} {
+        margin: -10px;
+    }
+    @media #{$md-layout} {
+        margin: -10px;
+    }
+    @media #{$sm-layout} {
+        margin: -10px;
+    }
+    .single-cat {
+        padding: 15px;
+        position: relative;
+        z-index: 1;
+        flex-basis: 16.666%;
+
+        @media #{$lg-layout} {
+            padding: 10px;
+            flex-basis: 16.66%;
+        }
+        @media #{$md-layout} {
+            padding: 10px;
+            flex-basis: 25%;
+        }
+        @media #{$sm-layout} {
+            padding: 10px;
+            flex-basis: 33.33%;
+        }
+        @media #{$large-mobile} {
+            padding: 10px;
+            flex-basis: 50%;
+        }
+        a {
+            display: block;
+        }
+        .thumbnail {
+            span {
+                display: block !important;
+            }
+            img {
+                @extend %radius;
+                width: 100%;
+                transition: all .5s;
+            }
+        }
+        .content {
+            padding-left: 5px;
+            padding-right: 5px;
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            bottom: 0;
+            padding-bottom: 22px;
+            z-index: 2;
+            .title {
+                margin-bottom: 0;
+                color: var(--color-white);
+            }
+        }
+
+        .inner {
+            position: relative;
+            overflow: hidden;
+            border-radius: var(--radius);
+            &::before {
+                position: absolute;
+                content: "";
+                @extend %axil-gradient;
+                opacity: 0.4;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 75px;
+                @extend %radius;
+                transition: all .5s;
+                z-index: 2;
+            }
+            &:hover {
+                &::before {
+                    transform: scale(1.1);
+                }
+                .thumbnail {
+                    img {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+       
+        
+    }
+}
+
+
+
+
+
+
+
+
+

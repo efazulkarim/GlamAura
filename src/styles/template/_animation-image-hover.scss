@@ -1,0 +1,60 @@
+/*---------------------------
+    Animation Images Css  
+-----------------------------*/
+
+.image-hover-group {
+    .animated-image-box {
+        position: relative;
+        height: 400px;
+        width: 400px;
+        margin: 0 20px;
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: none;
+        }
+    }
+}
+.image-hover-group {
+    display: flex;
+}
+.animated-image-box {
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: none;
+    }
+}
+
+
+.content-direction-column {
+    .animated-image-box {
+        position: relative;
+        height: 250px;
+        width: 250px;
+        border-radius: 100% !important;
+    }
+}
+
+.slider-style-1 {
+    .post-thumbnail {
+        .animated-image-box {
+            position: relative;
+            height: 615px;
+            width: 100%;
+        }
+    }
+}
+
+
+
+
+
