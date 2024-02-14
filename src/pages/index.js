@@ -20,7 +20,7 @@ const HomeDefault = ({allPosts}) => {
  
   return ( 
     <>
-      <HeadTitle pageTitle="Home Default" />
+      <HeadTitle pageTitle="GlamAura" />
       <HeaderOne postData={allPosts}/>
       <SliderOne postData={allPosts} />
       <PostSectionOne postData={allPosts}/>

@@ -218,16 +218,16 @@ const FooterOne = () => {
           <div className="row">
             <div className="col-lg-4 col-md-4">
               <div className="logo">
-              <Link href="/">
-                <a>
-                  <Image
-                    className="dark-logo"
-                    src={colorMode === "Dark" ? "/images/logo/logo-white2.webp" : "/images/logo/logo-black.webp"}
-                    alt="Logo Images"
-                    height={37}
-                    width={141}
-                  />
-                </a>
+                <Link href="/">
+                  <a>
+                    <Image
+                      className="dark-logo"
+                      src={colorMode === "Dark" ? "/images/logo/logo-white2.webp" : "/images/logo/logo-black.webp"}
+                      alt="Logo Images"
+                      height={37}
+                      width={141}
+                    />
+                  </a>
                 </Link>
               </div>
             </div>
@@ -236,11 +236,7 @@ const FooterOne = () => {
               <div className="d-flex justify-content-start mt_sm--15 justify-content-md-end align-items-center flex-wrap">
                 <h5 className="follow-title mb--0 mr--20">Follow Us</h5>
                 <ul className="social-icon color-tertiary md-size justify-content-start">
-                  <li>
-                    <a href="https://www.facebook.com/" rel="noopener" target="_blank">
-                      <i className="fab fa-facebook-f" />
-                    </a>
-                  </li>
+
                   <li>
                     <a href="https://www.instagram.com/">
                       <i className="fab fa-instagram" />
