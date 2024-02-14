@@ -5,32 +5,32 @@ import { motion } from "framer-motion"
 
 const ColorSwitcher = () => {
     const [activeClass, SetActiveClass] = useState("Light");
-	
-	const ColorHandler = (e) => {
-		var targetText = e.target.textContent;
-		window.localStorage.setItem("color-mode", targetText);
-	}
-	useEffect(() => {
-		var colorModeStore = window.localStorage.getItem("color-mode") || "Light";
+
+    const ColorHandler = (e) => {
+        var targetText = e.target.textContent;
+        window.localStorage.setItem("color-mode", targetText);
+    }
+    useEffect(() => {
+        var colorModeStore = window.localStorage.getItem("color-mode") || "Light";
         SetActiveClass(colorModeStore);
 
-		if (colorModeStore === "Dark") {
-			document.body.classList.add("active-dark-mode");
-			document.body.classList.remove("active-light-mode");
-		}else {
-			document.body.classList.add("active-light-mode");
-			document.body.classList.remove("active-dark-mode");
-		}
+        if (colorModeStore === "Dark") {
+            document.body.classList.add("active-dark-mode");
+            document.body.classList.remove("active-light-mode");
+        } else {
+            document.body.classList.add("active-light-mode");
+            document.body.classList.remove("active-dark-mode");
+        }
 
-	}, [ColorHandler]);
+    }, [ColorHandler]);
 
 
     const [mousePosition, setMousePosition] = useState({
         x: 0,
         y: 0
     });
-    
-    useEffect(() => {
+
+    /* useEffect(() => {
         const mouseMove = (e) => {
             setMousePosition({
                 x: e.clientX,
@@ -43,7 +43,7 @@ const ColorSwitcher = () => {
             window.removeEventListener("mousemove", mouseMove);
         }
 
-    }, [])
+    }, []) */
 
     const variants = {
         default: {
@@ -53,7 +53,7 @@ const ColorSwitcher = () => {
     }
 
 
-    return ( 
+    return (
         <>
             <motion.div variants={variants} animate="default" className="mouse-cursor cursor-outer" />
             <motion.div variants={variants} animate="default" className="mouse-cursor cursor-inner" />
@@ -62,22 +62,22 @@ const ColorSwitcher = () => {
                 <ul>
                     <li>
                         <Link href="#/">
-                        <a className={`setColor ${activeClass === "Light" ? "active" : ""}`} onClick={ColorHandler}>
-                            <span title="Light Mode">Light</span>
-                        </a>
+                            <a className={`setColor ${activeClass === "Light" ? "active" : ""}`} onClick={ColorHandler}>
+                                <span title="Light Mode">Light</span>
+                            </a>
                         </Link>
                     </li>
                     <li>
                         <Link href="#/">
-                        <a className={`setColor ${activeClass === "Dark" ? "active" : ""}`} onClick={ColorHandler}>
-                            <span title="Dark Mode">Dark</span>
-                        </a>
+                            <a className={`setColor ${activeClass === "Dark" ? "active" : ""}`} onClick={ColorHandler}>
+                                <span title="Dark Mode">Dark</span>
+                            </a>
                         </Link>
                     </li>
                 </ul>
             </div>
         </>
-     );
+    );
 }
- 
+
 export default ColorSwitcher;

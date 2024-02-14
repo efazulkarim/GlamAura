@@ -231,7 +231,7 @@ const Nav = ({ posts }) => {
                     </li>
                 </ul>
             </li>
-            <li className="menu-item-has-children">
+            {/* <li className="menu-item-has-children">
                 <Link legacyBehavior href="/">
                     <a>Pages</a>
                 </Link>
@@ -309,10 +309,15 @@ const Nav = ({ posts }) => {
                         </Link>
                     </li>
                 </ul>
-            </li>
+            </li> */}
             <li>
                 <Link legacyBehavior href="/lifestyle-blog">
                     <a>Lifestyle</a>
+                </Link>
+            </li>
+            <li>
+                <Link legacyBehavior href="/fashion-blog">
+                    <a>Fashion</a>
                 </Link>
             </li>
             <li>

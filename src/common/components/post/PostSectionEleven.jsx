@@ -13,19 +13,19 @@ import AddBanner from "../ad-banner/AddBanner";
 const filters = [
   {
     id: 1,
-    cate: "Design",
+    cate: "Fashion",
   },
   {
     id: 2,
-    cate: "Branding",
+    cate: "Lifestyle",
   },
   {
     id: 3,
-    cate: "SEO",
+    cate: "Beauty",
   },
   {
     id: 4,
-    cate: "Research",
+    cate: "Shopping",
   },
 ];
 
@@ -133,25 +133,25 @@ const PostSectionEleven = ({ postData }) => {
                       </div>
                     </div>
                     <div className="col-lg-8 col-xl-8 mt--30">
-						<PostLayoutTwo dataPost={tabPostData} postStart="2" show="6" bgColor="with-bg-solid"/>
+                      <PostLayoutTwo dataPost={tabPostData} postStart="2" show="6" bgColor="with-bg-solid" />
                     </div>
-					<div className="col-lg-4 col-xl-4 mt--30 mt_md--40 mt_sm--40">
-						<div className="sidebar-inner">
-							<WidgetCategory catData={postData}/>
-							<WidgetVideoPost postData={postData}/>
-						</div>
-					</div>
+                    <div className="col-lg-4 col-xl-4 mt--30 mt_md--40 mt_sm--40">
+                      <div className="sidebar-inner">
+                        <WidgetCategory catData={postData} />
+                        <WidgetVideoPost postData={postData} />
+                      </div>
+                    </div>
                   </div>
                 </Tab.Pane>
               </Tab.Content>
             </Tab.Container>
           </div>
         </div>
-		<div className="row">
-			<div className="col-lg-12">
-				<AddBanner img="/images/add-banner/banner-03.webp" height="200" width="1230" pClass="mt--30"/>
-			</div>
-		</div>
+        <div className="row">
+          <div className="col-lg-12">
+            <AddBanner img="/images/add-banner/banner-03.webp" height="200" width="1230" pClass="mt--30" />
+          </div>
+        </div>
       </div>
     </div>
   );
