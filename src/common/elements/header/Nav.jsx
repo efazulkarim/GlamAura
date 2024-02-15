@@ -262,11 +262,7 @@ const Nav = ({ posts }) => {
                     </li>
                 </ul>
             </li> */}
-            <li>
-                <Link legacyBehavior href="/lifestyle-blog">
-                    <a>Lifestyle</a>
-                </Link>
-            </li>
+
             <li>
                 <Link legacyBehavior href="/fashion-blog">
                     <a>Fashion</a>
@@ -275,6 +271,16 @@ const Nav = ({ posts }) => {
             <li>
                 <Link legacyBehavior href="/beauty-blog">
                     <a>Beauty</a>
+                </Link>
+            </li>
+            <li>
+                <Link legacyBehavior href="/beauty-blog">
+                    <a>Skincare</a>
+                </Link>
+            </li>
+            <li>
+                <Link legacyBehavior href="/lifestyle-blog">
+                    <a>Pets</a>
                 </Link>
             </li>
         </ul>

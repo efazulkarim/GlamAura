@@ -11,14 +11,14 @@ import PostSectionFour from '../common/components/post/PostSectionFour';
 import PostSectionTen from '../common/components/post/PostSectionTen';
 import PostSectionEleven from '../common/components/post/PostSectionEleven';
 
-const TechBlog = ({ allPosts }) => {
+const Skincare = ({ allPosts }) => {
 
-  const techPost = allPosts.filter(post => slugify(post.cate) === "health" || slugify(post.cate) === "leadership");
+  const techPost = allPosts.filter(post => slugify(post.cate) === "skincare" || slugify(post.cate) === "skincare");
   const videoPost = allPosts.filter(post => post.postFormat === "video");
 
   return (
     <>
-      <HeadTitle pageTitle="GlamAura - Health" />
+      <HeadTitle pageTitle="GlamAura - Skincare" />
       <HeaderThree postData={allPosts} />
       <PostSectionNine postData={techPost} />
       <CategoryListSlide cateData={allPosts} />
@@ -32,7 +32,7 @@ const TechBlog = ({ allPosts }) => {
   );
 }
 
-export default TechBlog;
+export default Skincare;
 
 
 export async function getStaticProps() {
