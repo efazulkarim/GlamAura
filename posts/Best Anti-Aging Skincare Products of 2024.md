@@ -4,7 +4,7 @@ title: 'Best Anti-Aging Skincare Products of 2024'
 featureImg: '/images/posts/thumbnail-02.webp'
 slidePost: true
 date: 'Jan 29 2024'
-pCate: 'Health Blog'
+pCate: 'Skincare Blog'
 cate: 'Skincare'
 cate_img: '/images/posts/category/anti-aging.webp'
 post_views: '150K Views'
