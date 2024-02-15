@@ -57,7 +57,7 @@ const Nav = ({ posts }) => {
                 <Link href="/">Home</Link>
             </li>
             <li className="menu-item-has-children">
-                <Link legacyBehavior href="/">
+                <Link legacyBehavior href="/apparel-blog">
                     <a>Apparel</a>
                 </Link>
                 {/*  <ul className="axil-submenu">
