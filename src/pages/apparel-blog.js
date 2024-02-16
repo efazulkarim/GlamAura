@@ -13,7 +13,7 @@ import PostSectionEight from "../common/components/post/PostSectionEight";
 import HeadTitle from "../common/elements/head/HeadTitle";
 import { slugify } from '../common/utils';
 
-const SeoBlog = ({ allPosts }) => {
+const ApparelBlog = ({ allPosts }) => {
   const router = useRouter();
   const PageSlug = router.pathname.replace("/", "");
 
@@ -23,7 +23,7 @@ const SeoBlog = ({ allPosts }) => {
 
   return (
     <>
-      <HeadTitle pageTitle="Apparel Blog" />
+      <HeadTitle pageTitle="GlamAura - Apparel " />
       <HeaderTwo postData={allPosts} />
       <PostSectionEight postData={seoPost} />
       <PostSectionTwo
@@ -42,7 +42,7 @@ const SeoBlog = ({ allPosts }) => {
   );
 }
 
-export default SeoBlog;
+export default ApparelBlog;
 
 
 export async function getStaticProps() {

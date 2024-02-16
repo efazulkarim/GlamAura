@@ -4,9 +4,9 @@ title: 'The Ultimate Guide to Hydrating Your Skin'
 featureImg: '/images/posts/thumbnail-01.webp'
 slidePost: true
 date: 'Feb 3 2024'
-pCate: 'Health Blog'
+pCate: 'Skincare Blog'
 cate: 'Skincare'
-cate_img: '/images/posts/category/design.webp'
+cate_img: '/images/posts/category/skincare.webp'
 post_views: '200K Views'
 read_time: '3 min read'
 author_name: 'Rose Mary'
@@ -22,7 +22,7 @@ author_social:
     - icon: fas fa-link
       url: https://linkedin.com
 tags: 
-    - SEO
+    - Skin
     - Health
     - Skin Care
 ---

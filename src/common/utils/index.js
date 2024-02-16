@@ -2,6 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { DateTime } from 'luxon'
 
 const slugify = function (text) {
+  if (typeof text === 'undefined' || text === null) {
+
+    return '';
+  }
   return text
     .toString()
     .toLowerCase()
