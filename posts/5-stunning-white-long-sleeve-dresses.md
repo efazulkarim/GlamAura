@@ -1,16 +1,16 @@
 ---
 postFormat: 'standard'
-title: '5 Stunning White Long Sleeve Dresses You'll Adore!'
+title: '5 Stunning Long Sleeve Dresses You'll Adore!'
 featureImg: '/images/posts/post-apparel-01.jpg'
 date: 'February 25, 2024'
 pCate: 'Apparel Blog'
 cate: 'Apparel'
-cate_img: '/images/posts/category/apparel.jpeg'
+cate_img: '/images/posts/category/apparel.webp'
 post_views: '300K Views'
 read_time: '5 min read'
 author_name: 'Ismat Jahan'
 author_img: '/images/posts/author/author-b6.webp'
-author_designation: 'Textile Manager'
+author_designation: 'Fashion Designer'
 author_bio: 'At 29 years old, my favorite compliment is being told that I look like my mom. Seeing myself in her image, like this daughter up top, makes me so proud of how far I’ve come, and so thankful for where I come from.'
 author_social:
     -
@@ -31,7 +31,7 @@ tags:
   - Dresses
   - White Dresses
   - Long Sleeve Dresses
-  - Fashion Reviews
+  - Clothing Reviews
 ---
 
 # 5 Stunning White Long Sleeve Dresses You'll Adore!
@@ -68,7 +68,7 @@ I love how comfortable and easy-to-wear this dress is! The fabric is soft, and t
 
 [Shop Casual T-Shirt Dress](#affiliate-link)
 
-## 3. Classic Fit-and-Flare Dress by Lark & Ro
+## 3. Classic Fit-and-Flare Dress by PRETTYGARDEN
 
 ![Classic Fit-and-Flare Dress](/images/white-long-sleeve-dresses/classic-fit-and-flare-dress.jpg)
 
@@ -98,20 +98,20 @@ I'm in love with the boho vibes of this dress! The embroidery detailing is stunn
 
 [Shop Boho Maxi Dress](#affiliate-link)
 
-## 5. Chic Wrap Dress by Calvin Klein
+## 5. Calvin Klein Women's Ruffle Front Wrap Dress
 
-![Chic Wrap Dress](/images/white-long-sleeve-dresses/chic-wrap-dress.jpg)
+![Chic Wrap Dress](/images/white-long-sleeve-dresses/ruffle-front-dress.jpg)
 
 **Description:**
-The Chic Wrap Dress by Calvin Klein is a sophisticated choice for work or formal events. Its classic wrap silhouette and waist tie detail create a timeless look that's perfect for any occasion.
+Elevate your wardrobe with the Ruffle Front Wrap Dress from Calvin Klein. Designed with a refined ruffle detail along the front, this wrap dress combines elegance and style seamlessly. Its waist tie enhances the silhouette, making it a standout choice for both work and formal occasions.
 
 **Why We Love It:**
-This dress exudes effortless elegance with its chic wrap design and flattering fit. It's a versatile piece that can take you from the office to dinner with ease.
+The Ruffle Front Wrap Dress stands out for its unique ruffle detailing and flattering wrap design. It offers a blend of sophistication and modern style, making it a versatile addition to any closet.
 
 **Honest Opinion:**
-I adore this wrap dress! The fit is perfect, and the quality is exceptional. It's my go-to dress for professional events or when I want to make a statement.
+This dress has quickly become a favorite in my collection. The ruffle front adds a touch of femininity, while the overall design remains sleek and professional. Exceptional in fit and quality, it's a reliable choice for any event that calls for a touch of class.
 
-[Shop Chic Wrap Dress](#affiliate-link)
+[Shop Ruffle Front Wrap Dress](#affiliate-link)
 
 ## Conclusion
 

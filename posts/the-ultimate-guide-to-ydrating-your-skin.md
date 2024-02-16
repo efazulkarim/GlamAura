@@ -1,7 +1,7 @@
 ---
 postFormat: 'standard'
 title: 'The Ultimate Guide to Hydrating Your Skin'
-featureImg: '/images/posts/thumbnail-01.webp'
+featureImg: '/images/posts/dull-and-dry-skin.jpg'
 slidePost: true
 date: 'Feb 3 2024'
 pCate: 'Skincare Blog'
