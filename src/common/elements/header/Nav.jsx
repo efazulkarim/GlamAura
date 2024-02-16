@@ -6,19 +6,19 @@ import { slugify } from "../../utils";
 const filters = [
     {
         id: 1,
-        cate: "Design",
+        cate: "Fashion",
     },
     {
         id: 2,
-        cate: "Travel",
+        cate: "Lifestyle",
     },
     {
         id: 3,
-        cate: "SEO",
+        cate: "Beauty",
     },
     {
         id: 4,
-        cate: "Research",
+        cate: "Shopping",
     },
 ];
 
@@ -55,60 +55,12 @@ const Nav = ({ posts }) => {
         <ul className="mainmenu">
             <li className="menu-item-has-children">
                 <Link href="/">Home</Link>
-                {/*     <ul className="axil-submenu"> */}
-                {/*  <li>
-                        <Link legacyBehavior href="/">
-                            <a className="hover-flip-item-wrapper">
-                                <span className="hover-flip-item">
-                                    <span data-text="Home Default">Home</span>
-                                </span>
-                            </a>
-                        </Link>
-                    </li> */}
-                {/*  <li>
-                        <Link legacyBehavior href="/creative-blog">
-                            <a className="hover-flip-item-wrapper">
-                                <span className="hover-flip-item">
-                                    <span data-text="Home Creative Blog">Home Creative Blog</span>
-                                </span>
-                            </a>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link legacyBehavior href="/seo-blog">
-                            <a className="hover-flip-item-wrapper">
-                                <span className="hover-flip-item">
-                                    <span data-text="Home SEO Blog">Home SEO Blog</span>
-                                </span>
-                            </a>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link legacyBehavior href="/tech-blog">
-                            <a className="hover-flip-item-wrapper">
-                                <span className="hover-flip-item">
-                                    <span data-text="Home Tech Blog">Home Tech Blog</span>
-                                </span>
-                            </a>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link legacyBehavior href="/lifestyle-blog">
-                            <a className="hover-flip-item-wrapper">
-                                <span className="hover-flip-item">
-                                    <span data-text="Home Lifestyle Blog">Home Lifestyle Blog</span>
-                                </span>
-                            </a>
-                        </Link>
-                    </li> */}
-
-                {/*  </ul> */}
             </li>
             <li className="menu-item-has-children">
-                <Link legacyBehavior href="/">
-                    <a>Posts</a>
+                <Link legacyBehavior href="/apparel-blog">
+                    <a>Apparel</a>
                 </Link>
-                <ul className="axil-submenu">
+                {/*  <ul className="axil-submenu">
                     <li>
                         <Link legacyBehavior href="/post/beauty-of-deep-space-billions-of-galaxies-in-the-universe.">
                             <a className="hover-flip-item-wrapper">
@@ -154,7 +106,7 @@ const Nav = ({ posts }) => {
                             </a>
                         </Link>
                     </li>
-                </ul>
+                </ul> */}
             </li>
             <li className="menu-item-has-children megamenu-wrapper">
                 <Link legacyBehavior href="#">
@@ -310,11 +262,7 @@ const Nav = ({ posts }) => {
                     </li>
                 </ul>
             </li> */}
-            <li>
-                <Link legacyBehavior href="/lifestyle-blog">
-                    <a>Lifestyle</a>
-                </Link>
-            </li>
+
             <li>
                 <Link legacyBehavior href="/fashion-blog">
                     <a>Fashion</a>
@@ -323,6 +271,16 @@ const Nav = ({ posts }) => {
             <li>
                 <Link legacyBehavior href="/beauty-blog">
                     <a>Beauty</a>
+                </Link>
+            </li>
+            <li>
+                <Link legacyBehavior href="/beauty-blog">
+                    <a>Skincare</a>
+                </Link>
+            </li>
+            <li>
+                <Link legacyBehavior href="/lifestyle-blog">
+                    <a>Pets</a>
                 </Link>
             </li>
         </ul>

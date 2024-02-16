@@ -1,41 +1,35 @@
 import { useRouter } from 'next/router'
+import { getAllPosts } from '../../lib/api';
+import { slugify, SortingByDate } from "../common/utils";
 import InstagramOne from "../common/components/instagram/InstagramOne";
+import PostSectionFour from "../common/components/post/PostSectionFour";
 import SocialOne from "../common/components/social/SocialOne";
 import FooterThree from "../common/elements/footer/FooterThree";
-import HeaderTwo from "../common/elements/header/HeaderTwo";
-import { getAllPosts } from '../../lib/api';
-import PostSectionFour from "../common/components/post/PostSectionFour";
-import PostSectionThree from "../common/components/post/PostSectionThree";
-import CategoryListSlide from "../common/components/category/CategoryListSlide";
-import PostSectionSeven from "../common/components/post/PostSectionSeven";
-import PostSectionTwo from "../common/components/post/PostSectionTwo";
-import PostSectionEight from "../common/components/post/PostSectionEight";
 import HeadTitle from "../common/elements/head/HeadTitle";
-import { slugify } from '../common/utils';
+import HeaderFour from "../common/elements/header/HeaderFour";
+import CategoryListSlide from '../common/components/category/CategoryListSlide';
+import PostSectionThree from '../common/components/post/PostSectionThree';
+import PostSectionSeven from '../common/components/post/PostSectionSeven';
+import PostSectionTen from '../common/components/post/PostSectionTen';
+import PostSectionTwelve from '../common/components/post/PostSectionTwelve';
 
+const PetsBlog = ({ allPosts }) => {
 
-const Beauty = ({ allPosts }) => {
   const router = useRouter();
   const PageSlug = router.pathname.replace("/", "");
 
-  const beautyPost = allPosts.filter(post => slugify(post.pCate) === PageSlug);
+  const lifestylePost = allPosts.filter(post => slugify(post.pCate) === PageSlug);
   const videoPost = allPosts.filter(post => post.postFormat === "video");
-
-
   return (
     <>
-      <HeadTitle pageTitle="GlamAura - Beauty Blog" />
-      <HeaderTwo postData={allPosts} />
-      <PostSectionEight postData={beautyPost} />
-      <PostSectionTwo
-        postData={allPosts}
-        adBanner={true}
-        headingTitle="What's new at GlamAura"
-      />
+      <HeadTitle pageTitle="GlaumAura - Pets Blog" />
+      <HeaderFour postData={allPosts} />
+      <PostSectionTwelve postData={lifestylePost} />
+      <PostSectionTen postData={allPosts} />
       <PostSectionSeven postData={allPosts} />
       <PostSectionThree postData={videoPost} heading="Featured Video" />
       <CategoryListSlide cateData={allPosts} />
-      <PostSectionFour postData={seoPost} adBanner={true} />
+      <PostSectionFour postData={lifestylePost} />
       <SocialOne />
       <InstagramOne parentClass="bg-color-grey" />
       <FooterThree />
@@ -43,7 +37,7 @@ const Beauty = ({ allPosts }) => {
   );
 }
 
-export default Beauty;
+export default PetsBlog;
 
 
 export async function getStaticProps() {
@@ -64,7 +58,7 @@ export async function getStaticProps() {
     'read_time',
     'author_social',
   ])
-
+  SortingByDate(allPosts);
   return {
     props: { allPosts }
   }

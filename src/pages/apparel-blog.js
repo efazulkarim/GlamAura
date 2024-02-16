@@ -13,20 +13,19 @@ import PostSectionEight from "../common/components/post/PostSectionEight";
 import HeadTitle from "../common/elements/head/HeadTitle";
 import { slugify } from '../common/utils';
 
-
-const Beauty = ({ allPosts }) => {
+const ApparelBlog = ({ allPosts }) => {
   const router = useRouter();
   const PageSlug = router.pathname.replace("/", "");
 
-  const beautyPost = allPosts.filter(post => slugify(post.pCate) === PageSlug);
+  const seoPost = allPosts.filter(post => slugify(post.pCate) === PageSlug);
   const videoPost = allPosts.filter(post => post.postFormat === "video");
 
 
   return (
     <>
-      <HeadTitle pageTitle="GlamAura - Beauty Blog" />
+      <HeadTitle pageTitle="GlamAura - Apparel " />
       <HeaderTwo postData={allPosts} />
-      <PostSectionEight postData={beautyPost} />
+      <PostSectionEight postData={seoPost} />
       <PostSectionTwo
         postData={allPosts}
         adBanner={true}
@@ -43,7 +42,7 @@ const Beauty = ({ allPosts }) => {
   );
 }
 
-export default Beauty;
+export default ApparelBlog;
 
 
 export async function getStaticProps() {

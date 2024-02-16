@@ -9,22 +9,22 @@ import Slider from "react-slick";
 import { slugify } from "../../utils";
 
 const filters = [
- 
+
   {
     id: 1,
-    cate: "Gadget",
+    cate: "Fashion",
   },
   {
     id: 2,
-    cate: "Design",
+    cate: "Lifestyle",
   },
   {
     id: 3,
-    cate: "Marketing",
+    cate: "Beauty",
   },
   {
     id: 4,
-    cate: "Technology",
+    cate: "Shopping",
   },
 ];
 const defaultActiveCat = slugify(filters[0].cate);
@@ -103,7 +103,7 @@ const PostSectionTwo = ({ postData, adBanner, headingTitle }) => {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,	
+          slidesToShow: 1,
         },
       },
     ],
@@ -113,17 +113,17 @@ const PostSectionTwo = ({ postData, adBanner, headingTitle }) => {
     <div className="axil-tab-area axil-section-gap bg-color-white">
       <div className="wrapper">
         <div className="container">
-			{adBanner === true ?  
-			<div className="row">
-            <div className="col-lg-12">
-              <AddBanner
-                img="/images/add-banner/banner-03.webp"
-                pClass="mb--30"
-              />
-            </div>
-          </div> : ""}
-         
-          <SectionTitleOne title={ headingTitle || "Innovation & Tech"} />
+          {adBanner === true ?
+            <div className="row">
+              <div className="col-lg-12">
+                <AddBanner
+                  img="/images/add-banner/banner-03.webp"
+                  pClass="mb--30"
+                />
+              </div>
+            </div> : ""}
+
+          <SectionTitleOne title={headingTitle || "Innovation & Tech"} />
           <div className="row">
             <div className="col-lg-12">
               <Tab.Container id="axilTab" defaultActiveKey={activeNav}>
@@ -171,30 +171,30 @@ const PostSectionTwo = ({ postData, adBanner, headingTitle }) => {
                                 </Link>
                               </h4>
                             </div>
-                            {data.featureImg ? 
-                            <div className="post-thumbnail">
-                              <div className="round-shape">
-                                <Image
+                            {data.featureImg ?
+                              <div className="post-thumbnail">
+                                <div className="round-shape">
+                                  <Image
                                     src="/images/icons/shape-01.webp"
                                     alt="Round Shape"
                                     height={77}
                                     width={390}
                                     priority={true}
                                   />
+                                </div>
+                                <Link href={`/post/${data.slug}`}>
+                                  <a>
+                                    <Image
+                                      src={data.featureImg}
+                                      alt={data.title}
+                                      height={260}
+                                      width={390}
+                                      priority={true}
+                                    />
+                                  </a>
+                                </Link>
                               </div>
-                              <Link href={`/post/${data.slug}`}>
-                                <a>
-                                  <Image
-                                    src={data.featureImg}
-                                    alt={data.title}
-                                    height={260}
-                                    width={390}
-                                    priority={true}
-                                  />
-                                </a>
-                              </Link>
-                            </div>
-                            :""}
+                              : ""}
                           </div>
                         </div>
                       ))}
