@@ -16,7 +16,7 @@ const filters = [
   },
   {
     id: 2,
-    cate: "Lifestyle",
+    cate: "Pets",
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ const filters = [
   },
   {
     id: 4,
-    cate: "Shopping",
+    cate: "Skincare",
   },
 ];
 const defaultActiveCat = slugify(filters[0].cate);
@@ -183,15 +183,15 @@ const PostSectionTwo = ({ postData, adBanner, headingTitle }) => {
                                   />
                                 </div>
                                 <Link href={`/post/${data.slug}`}>
-                                  <a>
-                                    <Image
-                                      src={data.featureImg}
-                                      alt={data.title}
-                                      height={260}
-                                      width={390}
-                                      priority={true}
-                                    />
-                                  </a>
+
+                                  <Image
+                                    src={data.featureImg}
+                                    alt={data.title}
+                                    height={260}
+                                    width={390}
+                                    priority={true}
+                                  />
+
                                 </Link>
                               </div>
                               : ""}

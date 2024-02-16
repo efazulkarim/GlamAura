@@ -10,7 +10,7 @@ const filters = [
     },
     {
         id: 2,
-        cate: "Lifestyle",
+        cate: "Skincare",
     },
     {
         id: 3,
@@ -18,7 +18,7 @@ const filters = [
     },
     {
         id: 4,
-        cate: "Shopping",
+        cate: "Apparel",
     },
 ];
 
