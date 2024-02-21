@@ -5,7 +5,7 @@ const HeadTitle = ({ pageTitle }) => {
         <Head>
             <meta charSet="utf-8" />
             <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-            <title>{`${pageTitle} - Your Helping Guide`}</title>
+            <title>{`${pageTitle} | Your Helping Guide`}</title>
             <meta name="robots" content="noindex, follow" />
             <meta name="description" content="Personal Blog Next JS Template" />
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />

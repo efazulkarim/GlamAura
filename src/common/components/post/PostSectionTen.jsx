@@ -9,19 +9,19 @@ import { slugify } from "../../utils";
 const filters = [
   {
     id: 1,
-    cate: "Gadget",
+    cate: "Beauty",
   },
   {
     id: 2,
-    cate: "Technology",
+    cate: "Skincare",
   },
   {
     id: 3,
-    cate: "Design",
+    cate: "Fashion",
   },
   {
     id: 4,
-    cate: "Products",
+    cate: "Pets",
   },
 ];
 
@@ -79,49 +79,49 @@ const PostSectionTen = ({ postData }) => {
                 <Tab.Pane className="single-post-grid" eventKey={activeNav}>
                   <div className="row mt--40">
                     <div className="col-xl-5 col-lg-6 col-md-12 col-12">
-                        {tabPostData.slice(1, 5).map((data) => (
-							<div className="content-block post-medium post-medium-border border-thin" key={data.slug}>
-								<div className="post-thumbnail">
-								<Link href={`/post/${data.slug}`}>
-									<a>
-									<Image
-										src={data.featureImg}
-										alt={data.title}
-										height={100}
-										width={100}
-										priority={true}
-									/>
-									</a>
-								</Link>
-								</div>
-								<div className="post-content">
-									<div className="post-cat">
-									<div className="post-cat-list">
-										<Link
-										href={`/category/${slugify(data.cate)}`}
-										>
-										<a className="hover-flip-item-wrapper">
-											<span className="hover-flip-item">
-											<span data-text={data.cate}>
-												{data.cate}
-											</span>
-											</span>
-										</a>
-										</Link>
-									</div>
-									</div>
-									<h4 className="title">
-									<Link href={`/post/${data.slug}`}>
-										<a>{data.title}</a>
-									</Link>
-									</h4>
-								</div>
-							</div>
-                        ))}
+                      {tabPostData.slice(1, 5).map((data) => (
+                        <div className="content-block post-medium post-medium-border border-thin" key={data.slug}>
+                          <div className="post-thumbnail">
+                            <Link href={`/post/${data.slug}`}>
+                              <a>
+                                <Image
+                                  src={data.featureImg}
+                                  alt={data.title}
+                                  height={100}
+                                  width={100}
+                                  priority={true}
+                                />
+                              </a>
+                            </Link>
+                          </div>
+                          <div className="post-content">
+                            <div className="post-cat">
+                              <div className="post-cat-list">
+                                <Link
+                                  href={`/category/${slugify(data.cate)}`}
+                                >
+                                  <a className="hover-flip-item-wrapper">
+                                    <span className="hover-flip-item">
+                                      <span data-text={data.cate}>
+                                        {data.cate}
+                                      </span>
+                                    </span>
+                                  </a>
+                                </Link>
+                              </div>
+                            </div>
+                            <h4 className="title">
+                              <Link href={`/post/${data.slug}`}>
+                                <a>{data.title}</a>
+                              </Link>
+                            </h4>
+                          </div>
+                        </div>
+                      ))}
                     </div>
                     <div className="col-xl-7 col-lg-6 col-md-12 col-12 mt_md--40 mt_sm--40">
                       <div className="content-block content-block post-grid post-grid-transparent">
-					  {firstPost.featureImg ? (
+                        {firstPost.featureImg ? (
                           <div className="post-thumbnail">
                             <Link href={`/post/${firstPost.slug}`}>
                               <a>
@@ -140,7 +140,7 @@ const PostSectionTen = ({ postData }) => {
                           <div className="post-content">
                             <div className="post-cat">
                               <div className="post-cat-list">
-							  <Link
+                                <Link
                                   href={`/category/${slugify(firstPost.cate)}`}
                                 >
                                   <a className="hover-flip-item-wrapper">
@@ -154,9 +154,9 @@ const PostSectionTen = ({ postData }) => {
                               </div>
                             </div>
                             <h3 className="title">
-								<Link href={`/post/${firstPost.slug}`}>
-									<a>{firstPost.title}</a>
-								</Link>
+                              <Link href={`/post/${firstPost.slug}`}>
+                                <a>{firstPost.title}</a>
+                              </Link>
                             </h3>
                           </div>
                         </div>

@@ -41,9 +41,9 @@ Water plays a pivotal role in maintaining the skin's elasticity and plumpness. H
 
 ## Daily Habits for Optimal Hydration
 
-1. **Drinking Water**: While the advice to drink eight glasses of water a day is well-known, its importance cannot be overstated. Hydration starts from within.
-2. **Choosing Hydrating Skincare Products**: Look for products containing hyaluronic acid, glycerin, and ceramides, which help draw and lock moisture into the skin.
-3. **Avoiding Harsh Cleansers**: Opt for gentle, non-stripping cleansers that maintain your skin's natural moisture barrier.
+Drinking Water: While the advice to drink eight glasses of water a day is well-known, its importance cannot be overstated. Hydration starts from within.
+Choosing Hydrating Skincare Products: Look for products containing hyaluronic acid, glycerin, and ceramides, which help draw and lock moisture into the skin.
+Avoiding Harsh Cleansers: Opt for gentle, non-stripping cleansers that maintain your skin's natural moisture barrier.
 
 ## DIY Hydration Boosters
 

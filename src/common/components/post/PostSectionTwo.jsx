@@ -16,7 +16,7 @@ const filters = [
   },
   {
     id: 2,
-    cate: "Lifestyle",
+    cate: "Pets",
   },
   {
     id: 3,
@@ -123,7 +123,7 @@ const PostSectionTwo = ({ postData, adBanner, headingTitle }) => {
               </div>
             </div> : ""}
 
-          <SectionTitleOne title={headingTitle || "Innovation & Tech"} />
+          <SectionTitleOne title={headingTitle || "Browse by Category"} />
           <div className="row">
             <div className="col-lg-12">
               <Tab.Container id="axilTab" defaultActiveKey={activeNav}>

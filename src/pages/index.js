@@ -14,30 +14,29 @@ import PostSectionSix from '../common/components/post/PostSectionSix';
 import SliderOne from '../common/components/slider/SliderOne';
 
 
-const HomeDefault = ({allPosts}) => {
+const HomeDefault = ({ allPosts }) => {
 
   const videoPost = allPosts.filter(post => post.postFormat === "video");
- 
-  return ( 
+
+  return (
     <>
       <HeadTitle pageTitle="GlamAura" />
-      <HeaderOne postData={allPosts}/>
+      <HeaderOne postData={allPosts} />
       <SliderOne postData={allPosts} />
-      <PostSectionOne postData={allPosts}/>
+      <PostSectionOne postData={allPosts} />
       <PostSectionTwo postData={allPosts} adBanner={true} />
-      <CategoryList cateData={allPosts}/>
-      <PostSectionSix postData={allPosts} />
+      <CategoryList cateData={allPosts} />
+      {/* <PostSectionSix postData={allPosts} /> */}
       <SocialOne />
-      <PostSectionFive postData={allPosts}/>
+      <PostSectionFive postData={allPosts} />
       <PostSectionFour postData={allPosts} adBanner={true} />
-      <PostSectionThree postData={videoPost} heading="Featured Video"/>
-      <InstagramOne parentClass="bg-color-grey"/>
+      <PostSectionThree postData={videoPost} heading="Featured Video" />
       <FooterOne />
-      
+
     </>
-   );
+  );
 }
- 
+
 export default HomeDefault;
 
 

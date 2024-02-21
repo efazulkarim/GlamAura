@@ -9,19 +9,19 @@ import { slugify } from "../../utils";
 const filters = [
   {
     id: 1,
-    cate: "Travel",
+    cate: "Skincare",
   },
   {
     id: 2,
-    cate: "Food",
+    cate: "Apparel",
   },
   {
     id: 3,
-    cate: "Design",
+    cate: "Shopping",
   },
   {
     id: 4,
-    cate: "LifeStyle",
+    cate: "Beauty",
   },
 ];
 
@@ -80,21 +80,21 @@ const PostSectionFive = ({ postData }) => {
                   <div className="row">
                     <div className="col-xl-7 col-lg-7 col-md-12 col-12">
                       <div className="active show content-block post-grid post-grid-large mt--30">
-                      {firstPost.featureImg ? 
-                        <div className="post-thumbnail">
-                          <Link href={`/post/${firstPost.slug}`}>
-                            <a>
-                              <Image
-                                src={firstPost.featureImg}
-                                alt={firstPost.title}
-                                height={660}
-                                width={705}
-                                priority={true}
-                              />
-                            </a>
-                          </Link>
-                        </div>
-                        :""}
+                        {firstPost.featureImg ?
+                          <div className="post-thumbnail">
+                            <Link href={`/post/${firstPost.slug}`}>
+                              <a>
+                                <Image
+                                  src={firstPost.featureImg}
+                                  alt={firstPost.title}
+                                  height={660}
+                                  width={705}
+                                  priority={true}
+                                />
+                              </a>
+                            </Link>
+                          </div>
+                          : ""}
                         <div className="post-grid-content">
                           <div className="post-content">
                             <div className="post-cat">
@@ -163,49 +163,49 @@ const PostSectionFive = ({ postData }) => {
                     </div>
                     <div className="col-xl-5 col-lg-5 col-md-12 col-12">
                       <div className="row">
-						{tabPostData.slice(1, 3).map((data) => (
-                        <div className="col-xl-12 col-lg-12 col-md-6 col-12" key={data.slug}>
-                          <div className="content-block post-grid mt--30">
-                            <div className="post-thumbnail">
-							<Link href={`/post/${data.slug}`}>
-								<a>
-								<Image
-									src={data.featureImg}
-									alt={data.title}
-									height={294}
-									width={495}
-									priority={true}
-								/>
-								</a>
-							</Link>
-                            </div>
-                            <div className="post-grid-content">
-                              <div className="post-content">
-                                <div className="post-cat">
-                                  <div className="post-cat-list">
-								  <Link
-									href={`/category/${slugify(data.cate)}`}
-									>
-									<a className="hover-flip-item-wrapper">
-										<span className="hover-flip-item">
-										<span data-text={data.cate}>
-											{data.cate}
-										</span>
-										</span>
-									</a>
-									</Link>
+                        {tabPostData.slice(1, 3).map((data) => (
+                          <div className="col-xl-12 col-lg-12 col-md-6 col-12" key={data.slug}>
+                            <div className="content-block post-grid mt--30">
+                              <div className="post-thumbnail">
+                                <Link href={`/post/${data.slug}`}>
+                                  <a>
+                                    <Image
+                                      src={data.featureImg}
+                                      alt={data.title}
+                                      height={294}
+                                      width={495}
+                                      priority={true}
+                                    />
+                                  </a>
+                                </Link>
+                              </div>
+                              <div className="post-grid-content">
+                                <div className="post-content">
+                                  <div className="post-cat">
+                                    <div className="post-cat-list">
+                                      <Link
+                                        href={`/category/${slugify(data.cate)}`}
+                                      >
+                                        <a className="hover-flip-item-wrapper">
+                                          <span className="hover-flip-item">
+                                            <span data-text={data.cate}>
+                                              {data.cate}
+                                            </span>
+                                          </span>
+                                        </a>
+                                      </Link>
+                                    </div>
                                   </div>
+                                  <h4 className="title">
+                                    <Link href={`/post/${data.slug}`}>
+                                      <a>{data.title}</a>
+                                    </Link>
+                                  </h4>
                                 </div>
-                                <h4 className="title">
-									<Link href={`/post/${data.slug}`}>
-										<a>{data.title}</a>
-									</Link>
-                                </h4>
                               </div>
                             </div>
                           </div>
-                        </div>
-						))}
+                        ))}
                       </div>
                     </div>
                   </div>
