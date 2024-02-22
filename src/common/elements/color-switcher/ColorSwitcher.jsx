@@ -30,7 +30,7 @@ const ColorSwitcher = () => {
         y: 0
     });
 
-    /* useEffect(() => {
+    useEffect(() => {
         const mouseMove = (e) => {
             setMousePosition({
                 x: e.clientX,
@@ -43,7 +43,7 @@ const ColorSwitcher = () => {
             window.removeEventListener("mousemove", mouseMove);
         }
 
-    }, []) */
+    }, [])
 
     const variants = {
         default: {
@@ -55,8 +55,8 @@ const ColorSwitcher = () => {
 
     return (
         <>
-            <motion.div variants={variants} animate="default" className="mouse-cursor cursor-outer" />
-            <motion.div variants={variants} animate="default" className="mouse-cursor cursor-inner" />
+            {/* <motion.div variants={variants} animate="default" className="mouse-cursor cursor-outer" />
+            <motion.div variants={variants} animate="default" className="mouse-cursor cursor-inner" /> */}
 
             <div className="my_switcher">
                 <ul>

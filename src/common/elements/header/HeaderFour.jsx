@@ -27,9 +27,9 @@ const HeaderFour = ({ darkLogo, lightLogo, postData }) => {
 
   const [togglaClass, setTogglaClass] = useState(false);
 
-   const toggleHandler = () => {
-        setTogglaClass(active => !active);
-   }
+  const toggleHandler = () => {
+    setTogglaClass(active => !active);
+  }
 
   return (
     <>
@@ -97,27 +97,27 @@ const HeaderFour = ({ darkLogo, lightLogo, postData }) => {
           <div className="container">
             <div className="row justify-content-between align-items-center">
               <div className="col-xl-8 col-lg-4 col-md-4 col-12">
-				<div className="wrapper d-block d-sm-flex flex-wrap align-items-center justify-content-center justify-content-md-start">
-					<div className="logo">
-						<Link href="/">
-							<a>
-								<Image
-								className="dark-logo"
-								width={141}
-								height={37}
-								src={(colorMode === "Dark" ? lightLogo || "/images/logo/logo-white2.webp" : darkLogo || "/images/logo/logo-black.webp") || "/images/logo/logo-black.webp" }
-								alt="Blogar logo"
-								/>
-							</a>
-						</Link>
-					</div>
+                <div className="wrapper d-block d-sm-flex flex-wrap align-items-center justify-content-center justify-content-md-start">
+                  <div className="logo">
+                    <Link href="/">
+                      <a>
+                        <Image
+                          className="dark-logo"
+                          width={141}
+                          height={37}
+                          src={(colorMode === "Dark" ? lightLogo || "/images/logo/glam.png" : darkLogo || "/images/logo/glam.png") || "/images/logo/glam.png"}
+                          alt=""
+                        />
+                      </a>
+                    </Link>
+                  </div>
 
-					<div className="mainmenu-wrapper d-none d-xl-block">
-					<nav className="mainmenu-nav">
-          <Nav posts={postData}/>
-					</nav>
-					</div>
-				</div>
+                  <div className="mainmenu-wrapper d-none d-xl-block">
+                    <nav className="mainmenu-nav">
+                      <Nav posts={postData} />
+                    </nav>
+                  </div>
+                </div>
               </div>
               <div className="col-xl-4 col-lg-8 col-md-8 col-12">
                 <div className="header-search d-flex flex-wrap align-items-center justify-content-center justify-content-xl-end">
@@ -137,7 +137,7 @@ const HeaderFour = ({ darkLogo, lightLogo, postData }) => {
                     <button className="search-button-toggle" onClick={toggleHandler}>
                       <i className="fal fa-search" />
                     </button>
-                    <form className={`header-search-form ${togglaClass ? "open": ""}`}>
+                    <form className={`header-search-form ${togglaClass ? "open" : ""}`}>
                       <div className="axil-search form-group">
                         <button type="submit" className="search-button">
                           <i className="fal fa-search" />

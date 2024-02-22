@@ -12,6 +12,7 @@ import SocialOne from '../common/components/social/SocialOne';
 import PostSectionFive from '../common/components/post/PostSectionFive';
 import PostSectionSix from '../common/components/post/PostSectionSix';
 import SliderOne from '../common/components/slider/SliderOne';
+import FooterTwo from './../common/elements/footer/FooterTwo';
 
 
 const HomeDefault = ({ allPosts }) => {
@@ -31,7 +32,7 @@ const HomeDefault = ({ allPosts }) => {
       <PostSectionFive postData={allPosts} />
       <PostSectionFour postData={allPosts} adBanner={true} />
       <PostSectionThree postData={videoPost} heading="Featured Video" />
-      <FooterOne />
+      <FooterTwo />
 
     </>
   );

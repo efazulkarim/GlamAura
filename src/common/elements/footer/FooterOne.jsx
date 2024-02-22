@@ -8,7 +8,7 @@ const FooterOne = () => {
 
   return (
     <div className="axil-footer-area axil-footer-style-1 footer-variation-2">
-      <div className="footer-mainmenu">
+      {/* <div className="footer-mainmenu">
         <div className="container">
           <div className="row">
             <div className="col-lg-2 col-md-6 col-sm-6 col-12">
@@ -211,7 +211,7 @@ const FooterOne = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* Start Footer Top Area  */}
       <div className="footer-top">
         <div className="container">
@@ -309,7 +309,7 @@ const FooterOne = () => {
                     <Link href="#">
                       <a className="hover-flip-item-wrapper">
                         <span className="hover-flip-item">
-                          <span data-text="Blogar Store">Blogar Store</span>
+                          <span data-text="GlamAura Store">GlamAura Store</span>
                         </span>
                       </a>
                     </Link>

@@ -5,22 +5,22 @@ import MobileMenu from './MobileMenu';
 import Nav from './Nav';
 
 
-const HeaderOne = ({pClass, darkLogo, lightLogo, postData}) => {
+const HeaderOne = ({ pClass, darkLogo, lightLogo, postData }) => {
     if (typeof window !== "undefined") {
         var colorMode = window.localStorage.getItem('color-mode');
     }
 
     const [showMMenu, SetShowMMenu] = useState(false);
-    
-    const MobileShowHandler = () => SetShowMMenu(true);  
-    const MobileHideHandler = () => SetShowMMenu(false);  
+
+    const MobileShowHandler = () => SetShowMMenu(true);
+    const MobileHideHandler = () => SetShowMMenu(false);
 
     const [togglaClass, setTogglaClass] = useState(false);
 
-   const toggleHandler = () => {
+    const toggleHandler = () => {
         setTogglaClass(active => !active);
-   }
-    
+    }
+
     return (
         <>
             <header className={`header axil-header ${pClass || ""}`}>
@@ -31,11 +31,11 @@ const HeaderOne = ({pClass, darkLogo, lightLogo, postData}) => {
                                 <Link href="/">
                                     <a>
                                         <Image
-                                        className="dark-logo"
-                                        width={141}
-                                        height={37}
-                                        src={(colorMode === "Dark" ? lightLogo || "/images/logo/logo-white2.webp" : darkLogo || "/images/logo/logo-black.webp") || "/images/logo/logo-black.webp" }
-                                        alt="Blogar logo"
+                                            className="dark-logo"
+                                            width={141}
+                                            height={37}
+                                            src={(colorMode === "Dark" ? lightLogo || "/images/logo/glam.png" : darkLogo || "/images/logo/glam_w.png") || "/images/logo/glam.png"}
+                                            alt="GlamAura"
                                         />
                                     </a>
                                 </Link>
@@ -44,7 +44,7 @@ const HeaderOne = ({pClass, darkLogo, lightLogo, postData}) => {
                         <div className="col-xl-6 d-none d-xl-block">
                             <div className="mainmenu-wrapper">
                                 <nav className="mainmenu-nav">
-                                    <Nav posts={postData}/>
+                                    <Nav posts={postData} />
                                 </nav>
                             </div>
                         </div>
@@ -66,7 +66,7 @@ const HeaderOne = ({pClass, darkLogo, lightLogo, postData}) => {
                                     <button className="search-button-toggle" onClick={toggleHandler}>
                                         <i className="fal fa-search" />
                                     </button>
-                                    <form className={`header-search-form ${togglaClass ? "open": ""}`}>
+                                    <form className={`header-search-form ${togglaClass ? "open" : ""}`}>
                                         <div className="axil-search form-group">
                                             <button type="submit" className="search-button">
                                                 <i className="fal fa-search" />
@@ -98,10 +98,10 @@ const HeaderOne = ({pClass, darkLogo, lightLogo, postData}) => {
                                         <Link href="#">
                                             <a>
                                                 <Image
-                                                width={40}
-                                                height={40}
-                                                src="/images/others/author.webp"
-                                                alt="Author Images"
+                                                    width={40}
+                                                    height={40}
+                                                    src="/images/others/author.webp"
+                                                    alt="Author Images"
                                                 />
                                             </a>
                                         </Link>
@@ -122,7 +122,7 @@ const HeaderOne = ({pClass, darkLogo, lightLogo, postData}) => {
                 </div>
             </header>
 
-            <MobileMenu menuShow={showMMenu} menuHide={MobileHideHandler}/>
+            <MobileMenu menuShow={showMMenu} menuHide={MobileHideHandler} />
         </>
     )
 }

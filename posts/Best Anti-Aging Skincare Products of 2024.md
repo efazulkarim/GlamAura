@@ -1,7 +1,7 @@
 ---
 postFormat: 'standard'
 title: 'Best Anti-Aging Skincare Products of 2024'
-featureImg: '/images/posts/thumbnail-02.webp'
+featureImg: '/images/posts/thumbnail-02.jpg'
 slidePost: true
 date: 'Jan 29 2024'
 pCate: 'Skincare Blog'
