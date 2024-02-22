@@ -6,7 +6,7 @@ slidePost: true
 date: 'Jan 29 2024'
 pCate: 'Skincare Blog'
 cate: 'Skincare'
-cate_img: '/images/posts/category/anti-aging.webp'
+cate_img: '/images/posts/category/skincare.webp'
 post_views: '150K Views'
 read_time: '4 min read'
 author_name: 'Rose Mary'

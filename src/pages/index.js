@@ -26,10 +26,8 @@ const HomeDefault = ({ allPosts }) => {
       <SliderOne postData={allPosts} />
       <PostSectionOne postData={allPosts} />
       <PostSectionTwo postData={allPosts} adBanner={true} />
-      <CategoryList cateData={allPosts} />
-      {/* <PostSectionSix postData={allPosts} /> */}
-      <SocialOne />
       <PostSectionFive postData={allPosts} />
+      <CategoryList cateData={allPosts} />
       <PostSectionFour postData={allPosts} adBanner={true} />
       <PostSectionThree postData={videoPost} heading="Featured Video" />
       <FooterTwo />

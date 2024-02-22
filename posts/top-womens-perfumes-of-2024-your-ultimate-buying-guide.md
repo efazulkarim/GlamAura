@@ -1,7 +1,7 @@
 ---
 postFormat: 'standard'
 title: 'Top Womens Perfumes of 2024: Your Ultimate Buying Guide'
-featureImg: '/images/posts/perfume-guide-2024.webp'
+featureImg: '/images/posts/perfume-guide-2024_result.png'
 date: 'Feb 17 2024'
 pCate: 'Beauty Blog'
 cate: 'Beauty'
