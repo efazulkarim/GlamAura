@@ -1,7 +1,4 @@
 import { useRouter } from 'next/router'
-import InstagramOne from "../common/components/instagram/InstagramOne";
-import SocialOne from "../common/components/social/SocialOne";
-import FooterThree from "../common/elements/footer/FooterThree";
 import HeaderTwo from "../common/elements/header/HeaderTwo";
 import { getAllPosts } from '../../lib/api';
 import PostSectionFour from "../common/components/post/PostSectionFour";
@@ -12,6 +9,7 @@ import PostSectionTwo from "../common/components/post/PostSectionTwo";
 import PostSectionEight from "../common/components/post/PostSectionEight";
 import HeadTitle from "../common/elements/head/HeadTitle";
 import { slugify } from '../common/utils';
+import FooterTwo from '../common/elements/footer/FooterTwo';
 
 
 const Beauty = ({ allPosts }) => {
@@ -29,16 +27,16 @@ const Beauty = ({ allPosts }) => {
       <PostSectionEight postData={beautyPost} />
       <PostSectionTwo
         postData={allPosts}
-        adBanner={true}
+        /* adBanner={true} */
         headingTitle="What's new at GlamAura"
       />
       <PostSectionSeven postData={allPosts} />
       <PostSectionThree postData={videoPost} heading="Featured Video" />
       <CategoryListSlide cateData={allPosts} />
-      <PostSectionFour postData={seoPost} adBanner={true} />
-      <SocialOne />
-      <InstagramOne parentClass="bg-color-grey" />
-      <FooterThree />
+      <PostSectionFour postData={beautyPost} adBanner={true} />
+
+
+      <FooterTwo />
     </>
   );
 }

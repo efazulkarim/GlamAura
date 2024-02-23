@@ -27,9 +27,9 @@ const HeaderThree = ({ darkLogo, lightLogo, postData }) => {
 
   const [togglaClass, setTogglaClass] = useState(false);
 
-   const toggleHandler = () => {
-        setTogglaClass(active => !active);
-   }
+  const toggleHandler = () => {
+    setTogglaClass(active => !active);
+  }
 
   return (
     <>
@@ -96,33 +96,33 @@ const HeaderThree = ({ darkLogo, lightLogo, postData }) => {
         <div className="header-middle">
           <div className="container">
             <div className="row align-items-center">
-                <div className="col-lg-3 col-md-4 col-sm-6">
-                    <div className="logo">
-                        <Link href="/">
-                            <a>
-                                <Image
-                                className="dark-logo"
-                                width={141}
-                                height={37}
-                                src={(colorMode === "Dark" ? lightLogo || "/images/logo/logo-white2.webp" : darkLogo || "/images/logo/logo-black.webp") || "/images/logo/logo-black.webp" }
-                                alt="Blogar logo"
-                                />
-                            </a>
-                        </Link>
-                    </div>
-                </div>     
-                <div className="col-lg-9 col-md-8 col-sm-6">
-                    <div className="banner-add text-end">
-                    <a href="#">
-                        <Image
-                        src="/images/others/add-01.webp"
-                        width={728}
-                        height={92}
-                        alt="Add images"
-                        />
+              <div className="col-lg-3 col-md-4 col-sm-6">
+                <div className="logo">
+                  <Link href="/">
+                    <a>
+                      <Image
+                        className="dark-logo"
+                        width={141}
+                        height={37}
+                        src={(colorMode === "Dark" ? lightLogo || "/images/logo/glam.png" : darkLogo || "/images/logo/glam_w.png") || "/images/logo/glam.png"}
+                        alt="GlamAura"
+                      />
                     </a>
-                    </div>
+                  </Link>
                 </div>
+              </div>
+              <div className="col-lg-9 col-md-8 col-sm-6">
+                <div className="banner-add text-end">
+                  <a href="#">
+                    <Image
+                      src="/images/others/add-01.webp"
+                      width={728}
+                      height={92}
+                      alt="Add images"
+                    />
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -133,7 +133,7 @@ const HeaderThree = ({ darkLogo, lightLogo, postData }) => {
               <div className="col-xl-7 col-12">
                 <div className="mainmenu-wrapper d-none d-xl-block">
                   <nav className="mainmenu-nav">
-                  <Nav posts={postData}/>
+                    <Nav posts={postData} />
                   </nav>
                 </div>
               </div>
@@ -155,7 +155,7 @@ const HeaderThree = ({ darkLogo, lightLogo, postData }) => {
                     <button className="search-button-toggle" onClick={toggleHandler}>
                       <i className="fal fa-search" />
                     </button>
-                    <form className={`header-search-form ${togglaClass ? "open": ""}`}>
+                    <form className={`header-search-form ${togglaClass ? "open" : ""}`}>
                       <div className="axil-search form-group">
                         <button type="submit" className="search-button">
                           <i className="fal fa-search" />

@@ -6,11 +6,11 @@ import { slugify } from "../../utils";
 const filters = [
     {
         id: 1,
-        cate: "Fashion",
+        cate: "Apparel",
     },
     {
         id: 2,
-        cate: "Lifestyle",
+        cate: "Shopping",
     },
     {
         id: 3,
@@ -18,7 +18,7 @@ const filters = [
     },
     {
         id: 4,
-        cate: "Shopping",
+        cate: "Makeup",
     },
 ];
 
@@ -60,53 +60,6 @@ const Nav = ({ posts }) => {
                 <Link legacyBehavior href="/apparel-blog">
                     <a>Apparel</a>
                 </Link>
-                {/*  <ul className="axil-submenu">
-                    <li>
-                        <Link legacyBehavior href="/post/beauty-of-deep-space-billions-of-galaxies-in-the-universe.">
-                            <a className="hover-flip-item-wrapper">
-                                <span className="hover-flip-item">
-                                    <span data-text="Post Format Standard">Post Format Standard</span>
-                                </span>
-                            </a>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link legacyBehavior href="/post/flutter-the-good-the-bad-and-the-ugly">
-                            <a className="hover-flip-item-wrapper">
-                                <span className="hover-flip-item">
-                                    <span data-text="Post Format Video">Post Format Video</span>
-                                </span>
-                            </a>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link legacyBehavior href="/post/fashion-young-handsome-man-in-casual-watch">
-                            <a className="hover-flip-item-wrapper">
-                                <span className="hover-flip-item">
-                                    <span data-text="Post Format Gallery">Post Format Gallery</span>
-                                </span>
-                            </a>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link legacyBehavior href="/post/lightweight-grippable-and-ready-to-go">
-                            <a className="hover-flip-item-wrapper">
-                                <span className="hover-flip-item">
-                                    <span data-text="Post Format Audio">Post Format Audio</span>
-                                </span>
-                            </a>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link legacyBehavior href="/post/new-freehand-templates-built-for-the-whole-team">
-                            <a className="hover-flip-item-wrapper">
-                                <span className="hover-flip-item">
-                                    <span data-text="Post Format Quote">Post Format Quote</span>
-                                </span>
-                            </a>
-                        </Link>
-                    </li>
-                </ul> */}
             </li>
             <li className="menu-item-has-children megamenu-wrapper">
                 <Link legacyBehavior href="#">
@@ -183,86 +136,6 @@ const Nav = ({ posts }) => {
                     </li>
                 </ul>
             </li>
-            {/* <li className="menu-item-has-children">
-                <Link legacyBehavior href="/">
-                    <a>Pages</a>
-                </Link>
-                <ul className="axil-submenu">
-                    <li>
-                        <Link legacyBehavior href="/post-list">
-                            <a className="hover-flip-item-wrapper">
-                                <span className="hover-flip-item">
-                                    <span data-text="Post List">Post List</span>
-                                </span>
-                            </a>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link legacyBehavior href="/category/design">
-                            <a className="hover-flip-item-wrapper">
-                                <span className="hover-flip-item">
-                                    <span data-text="Post Archive">Post Archive</span>
-                                </span>
-                            </a>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link legacyBehavior href="/author/rose-mary">
-                            <a className="hover-flip-item-wrapper">
-                                <span className="hover-flip-item">
-                                    <span data-text="Author Page">Author Page</span>
-                                </span>
-                            </a>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link legacyBehavior href="/about">
-                            <a className="hover-flip-item-wrapper">
-                                <span className="hover-flip-item">
-                                    <span data-text="About Page">About Page</span>
-                                </span>
-                            </a>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link legacyBehavior href="/contact">
-                            <a className="hover-flip-item-wrapper">
-                                <span className="hover-flip-item">
-                                    <span data-text="Contact Us">Contact Us</span>
-                                </span>
-                            </a>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link legacyBehavior href="/404">
-                            <a className="hover-flip-item-wrapper">
-                                <span className="hover-flip-item">
-                                    <span data-text="404 Page">404 Page</span>
-                                </span>
-                            </a>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link legacyBehavior href="/maintenance">
-                            <a className="hover-flip-item-wrapper">
-                                <span className="hover-flip-item">
-                                    <span data-text="Maintenance">Maintenance</span>
-                                </span>
-                            </a>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link legacyBehavior href="/privacy-policy">
-                            <a className="hover-flip-item-wrapper">
-                                <span className="hover-flip-item">
-                                    <span data-text="Privacy Policy">Privacy Policy</span>
-                                </span>
-                            </a>
-                        </Link>
-                    </li>
-                </ul>
-            </li> */}
-
             <li>
                 <Link legacyBehavior href="/fashion-blog">
                     <a>Fashion</a>
@@ -274,12 +147,12 @@ const Nav = ({ posts }) => {
                 </Link>
             </li>
             <li>
-                <Link legacyBehavior href="/beauty-blog">
+                <Link legacyBehavior href="/skincare-blog">
                     <a>Skincare</a>
                 </Link>
             </li>
             <li>
-                <Link legacyBehavior href="/lifestyle-blog">
+                <Link legacyBehavior href="/pet-blog">
                     <a>Pets</a>
                 </Link>
             </li>
