@@ -105,7 +105,7 @@ const FooterTwo = () => {
                     <Link href="#">
                       <a className="hover-flip-item-wrapper">
                         <span className="hover-flip-item">
-                          <span data-text="Blogar Store">Blogar Store</span>
+                          <span data-text="GlamAura Store">GlamAura Store</span>
                         </span>
                       </a>
                     </Link>

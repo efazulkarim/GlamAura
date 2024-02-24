@@ -10,8 +10,8 @@ const Maintenance = () => {
 
     return (
         <>
-       
-            <HeadTitle pageTitle="Coming Soon"/>
+
+            <HeadTitle pageTitle="Coming Soon" />
             <div className="maintanence-area">
                 <div className="container">
                     <div className="row align-items-center">
@@ -22,10 +22,10 @@ const Maintenance = () => {
                                         <a>
                                             <Image
                                                 className="dark-logo"
-                                                width={153}
-                                                height={40}
-                                                src={(colorMode === "Dark" ? "/images/logo/logo-white2.webp" : "/images/logo/logo-black.webp") || "/images/logo/logo-black.webp"}
-                                                alt="Blogar logo"
+                                                width={141}
+                                                height={37}
+                                                src={colorMode === "Dark" ? lightLogo || "/images/logo/logo-white2.webp" : darkLogo || "/images/logo/logo-black.webp"}
+                                                alt="GlamAura logo"
                                             />
                                         </a>
                                     </Link>
@@ -68,12 +68,12 @@ const Maintenance = () => {
                         </div>
                         <div className="order-1 order-lg-2 col-lg-5 offset-lg-1">
                             <div className="thumbnail">
-                            <Image
-                                width={495}
-                                height={480}
-                                src="/images/others/maintenence.webp"
-                                alt="Coming Soon"
-                            />
+                                <Image
+                                    width={495}
+                                    height={480}
+                                    src="/images/others/maintenence.webp"
+                                    alt="Coming Soon"
+                                />
                             </div>
                         </div>
                     </div>

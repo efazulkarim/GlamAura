@@ -1,7 +1,7 @@
 ---
 postFormat: 'standard'
 title: 'Top 5 Must-Have Pet Accessories for Your Furry Friend!'
-featureImg: '/images/posts/post-pets-01.jpg'
+featureImg: '/images/posts/pet-cover.jpg'
 date: 'Feb 16 2024'
 pCate: 'Pet Blog'
 cate: 'Pets'
@@ -29,7 +29,7 @@ author_social:
 tags:
   - Pet Accessories
   - Pet Supplies
-  - Pet Reviews
+  - Reviews
 ---
 
 # Top 5 Must-Have Pet Accessories for Your Furry Friend!

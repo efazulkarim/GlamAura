@@ -11,12 +11,13 @@ import { slugify } from "../../utils";
 const filters = [
 
   {
+
     id: 1,
-    cate: "Fashion",
+    cate: "Pets",
   },
   {
     id: 2,
-    cate: "Pets",
+    cate: "Fashion",
   },
   {
     id: 3,
