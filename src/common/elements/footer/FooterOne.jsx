@@ -222,7 +222,7 @@ const FooterOne = () => {
                   <a>
                     <Image
                       className="dark-logo"
-                      src={colorMode === "Dark" ? "/images/logo/logo-white2.webp" : "/images/logo/logo-black.webp"}
+                      src={(colorMode === "Dark" ? lightLogo || "/images/logo/glam.png" : darkLogo || "/images/logo/glam_w.png") || "/images/logo/glam.png"}
                       alt="Logo Images"
                       height={37}
                       width={141}
