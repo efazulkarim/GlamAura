@@ -47,8 +47,7 @@ const FooterThree = ({ bgColor, darkLogo, lightLogo }) => {
           </div>
         </div>
       </div>
-      {/* End Footer Top Area  */}
-      {/* Start Copyright Area  */}
+
       <div className="copyright-area">
         <div className="container">
           <div className="row align-items-center">
