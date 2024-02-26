@@ -1,10 +1,10 @@
 ---
 postFormat: 'standard'
 title: 'Gift Guide for Every Type of Boyfriend : 2024 Guide'
-featureImg: '/images/posts/thumbnail-02.webp'
+featureImg: '/images/posts/Gift.jpg'
 slidePost: true
 date: 'Jul 22 2022'
-pCate: 'Fashion Blog'
+pCate: 'Beauty Blog'
 cate: 'Gifts'
 cate_img: '/images/posts/category/gifts.webp'
 post_views: '200K Views'
