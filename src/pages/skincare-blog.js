@@ -21,7 +21,7 @@ const Skincare = ({ allPosts }) => {
       <PostSectionNine postData={skincarePost} />
       <CategoryListSlide cateData={allPosts} />
       <PostSectionTen postData={allPosts} />
-      <PostSectionFour postData={skincarePost} adBanner={true} />
+      <PostSectionFour postData={skincarePost} /* adBanner={true}  */ />
       <PostSectionEleven postData={allPosts} />
       <FooterTwo />
     </>

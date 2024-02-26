@@ -9,19 +9,19 @@ import { slugify } from "../../utils";
 const filters = [
   {
     id: 1,
-    cate: "Design",
+    cate: "Gifts",
   },
   {
     id: 2,
-    cate: "Gadget",
+    cate: "Makeup",
   },
   {
     id: 3,
-    cate: "Technology",
+    cate: "Shopping",
   },
   {
     id: 4,
-    cate: "Marketing",
+    cate: "Hair Care",
   },
 ];
 
@@ -86,21 +86,21 @@ const PostSectionSeven = ({ postData }) => {
                             key={data.slug}
                           >
                             <div className="content-block post-grid mt--30">
-                            {data.featureImg ? 
-                              <div className="post-thumbnail">
-                                <Link href={`/post/${data.slug}`}>
-                                  <a>
-                                    <Image
-                                      src={data.featureImg}
-                                      alt={data.title}
-                                      height={294}
-                                      width={495}
-                                      priority={true}
-                                    />
-                                  </a>
-                                </Link>
-                              </div>
-                              :"" }
+                              {data.featureImg ?
+                                <div className="post-thumbnail">
+                                  <Link href={`/post/${data.slug}`}>
+                                    <a>
+                                      <Image
+                                        src={data.featureImg}
+                                        alt={data.title}
+                                        height={294}
+                                        width={495}
+                                        priority={true}
+                                      />
+                                    </a>
+                                  </Link>
+                                </div>
+                                : ""}
                               <div className="post-grid-content">
                                 <div className="post-content">
                                   <div className="post-cat">
@@ -132,21 +132,21 @@ const PostSectionSeven = ({ postData }) => {
                     </div>
                     <div className="col-xl-7 col-lg-7 col-md-12 col-12">
                       <div className="active show content-block post-grid post-grid-large mt--30">
-                      {firstPost.featureImg ? 
-                        <div className="post-thumbnail">
-                          <Link href={`/post/${firstPost.slug}`}>
-                            <a>
-                              <Image
-                                src={firstPost.featureImg}
-                                alt={firstPost.title}
-                                height={660}
-                                width={705}
-                                priority={true}
-                              />
-                            </a>
-                          </Link>
-                        </div>
-                        :""}
+                        {firstPost.featureImg ?
+                          <div className="post-thumbnail">
+                            <Link href={`/post/${firstPost.slug}`}>
+                              <a>
+                                <Image
+                                  src={firstPost.featureImg}
+                                  alt={firstPost.title}
+                                  height={660}
+                                  width={705}
+                                  priority={true}
+                                />
+                              </a>
+                            </Link>
+                          </div>
+                          : ""}
                         <div className="post-grid-content">
                           <div className="post-content">
                             <div className="post-cat">

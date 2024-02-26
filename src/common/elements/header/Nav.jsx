@@ -136,11 +136,11 @@ const Nav = ({ posts }) => {
                     </li>
                 </ul>
             </li>
-            <li>
+            {/*  <li>
                 <Link legacyBehavior href="/fashion-blog">
                     <a>Fashion</a>
                 </Link>
-            </li>
+            </li> */}
             <li>
                 <Link legacyBehavior href="/beauty-blog">
                     <a>Beauty</a>
