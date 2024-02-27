@@ -1,17 +1,18 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import '../styles/style.scss';
 import ColorSwitcher from '../common/elements/color-switcher/ColorSwitcher';
-import { SSRProvider } from '@react-aria/ssr';
+import { SSRProvider } from 'react-bootstrap';
+
 
 
 function MyApp({ Component, pageProps }) {
   return (
-
-    <SSRProvider>
-      <ColorSwitcher />
-      <Component {...pageProps} />
-    </SSRProvider>
-
+    <>
+      <SSRProvider>
+        <ColorSwitcher />
+        <Component {...pageProps} />
+      </SSRProvider>
+    </>
   )
 }
 
