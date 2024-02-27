@@ -26,13 +26,10 @@ author_social:
         icon: fas fa-link
         url: https://linkedin.com
 tags: 
-    - SEO
-    - Life Style
-    - Web Design
-    - Development
-    - UI/UX
-    - Software
-
+    - Haircare
+    - Health
+    - Beauty
+   
 ---
 
 ### Ultimate Guide to Identifying Your Hair Type: Unlock Personalized Haircare
