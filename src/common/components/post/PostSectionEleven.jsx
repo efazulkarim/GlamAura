@@ -10,14 +10,15 @@ import WidgetCategory from "../sidebar/WidgetCategory";
 import WidgetVideoPost from "../sidebar/WidgetVideoPost";
 import AddBanner from "../ad-banner/AddBanner";
 
+
 const filters = [
   {
     id: 1,
-    cate: "Fashion",
+    cate: "Makeup",
   },
   {
     id: 2,
-    cate: "Lifestyle",
+    cate: "Haircare",
   },
   {
     id: 3,
