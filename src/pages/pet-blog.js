@@ -18,18 +18,18 @@ const PetsBlog = ({ allPosts }) => {
   const router = useRouter();
   const PageSlug = router.pathname.replace("/", "");
 
-  const petPost = allPosts.filter(post => slugify(post.pCate) === PageSlug);
+  const lifestylePost = allPosts.filter(post => slugify(post.pCate) === PageSlug);
   const videoPost = allPosts.filter(post => post.postFormat === "video");
   return (
     <>
       <HeadTitle pageTitle="GlaumAura - Pets Blog" />
       <HeaderFour postData={allPosts} />
-      <PostSectionTwelve postData={petPost} />
+      <PostSectionTwelve postData={lifestylePost} />
       <PostSectionTen postData={allPosts} />
       <PostSectionSeven postData={allPosts} />
       <PostSectionThree postData={videoPost} heading="Featured Video" />
       <CategoryListSlide cateData={allPosts} />
-      <PostSectionFour postData={petPost} />
+      <PostSectionFour postData={lifestylePost} />
       <SocialOne />
       <InstagramOne parentClass="bg-color-grey" />
       <FooterThree />
