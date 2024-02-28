@@ -21,7 +21,7 @@ const filters = [
   },
   {
     id: 4,
-    cate: "Hair Care",
+    cate: "Haircare",
   },
 ];
 
