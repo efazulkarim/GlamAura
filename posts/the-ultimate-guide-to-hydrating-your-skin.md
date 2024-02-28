@@ -22,7 +22,7 @@ author_social:
     - icon: fas fa-link
       url: https://linkedin.com
 tags: 
-    - Skin
+    - Beauty
     - Health
     - Skin Care
 ---

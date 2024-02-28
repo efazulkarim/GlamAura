@@ -2,7 +2,6 @@
 postFormat: 'standard'
 title: 'The Art of Mixing and Matching Patterns Like a Pro'
 featureImg: '/images/posts/post-tech-10.webp'
-featured: true
 date: 'Jul 22 2022'
 pCate: 'Beauty Blog'
 cate: 'Shopping'
@@ -28,10 +27,8 @@ author_social:
         url: https://linkedin.com
 tags: 
     - Shopping
-    - Clothing
+    - Apparel
     - Fashion
-    
-    
 
 ---
 

@@ -1,9 +1,9 @@
 ---
 postFormat: 'standard'
 title: 'Gift Guide for Every Type of Boyfriend : 2024 Guide'
-featureImg: '/images/posts/Gift.png'
-slidePost: true
+featureImg: '/images/posts/Gift.jpg'
 featured: true
+slidePost: true
 date: 'Jul 22 2022'
 pCate: 'Beauty Blog'
 cate: 'Gifts'
@@ -28,12 +28,9 @@ author_social:
         icon: fas fa-link
         url: https://linkedin.com
 tags: 
-    - Wordpress Development
-    - Life Style
-    - Web Design
-    - Development
-    - UI/UX
-    - Software
+    - Gifts
+    - Product Review
+    
 
 ---
 

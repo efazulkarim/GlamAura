@@ -5,7 +5,7 @@ featureImg: '/images/posts/post-grid-01.webp'
 videoLink: 'https://www.youtube.com/embed/U3v5yMF1hTs?origin=https://new.axilthemes.com/'
 date: 'Feb 20 2022'
 pCate: 'Beauty Blog'
-cate: 'Skincare'
+cate: 'Gifts'
 cate_img: '/images/posts/category/gifts.webp'
 post_views: '300K Views'
 read_time: '3 min read'
@@ -27,12 +27,10 @@ author_social:
         icon: fas fa-link
         url: https://linkedin.com
 tags: 
-    - SEO
-    - Life Style
-    - Web Design
-    - Development
-    - UI/UX
-    - Software
+    - Skincare
+    - Beauty
+    - Product Review
+   
 
 ---
 

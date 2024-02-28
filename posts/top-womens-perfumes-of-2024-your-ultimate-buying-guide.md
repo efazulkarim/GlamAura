@@ -22,9 +22,9 @@ author_social:
       url: https://linkedin.com
 tags:
     - Women's Perfume
-    - Fragrance
+    - Product Reviews
     - Beauty 
-    - 
+
 ---
 
 # Top Women's Perfumes of 2024: Your Ultimate Buying Guide

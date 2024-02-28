@@ -2,6 +2,7 @@
 postFormat: 'standard'
 title: 'Unveil Radiant Skin: Your Everyday Step-by-Step Skincare Guide'
 featureImg: '/images/posts/dull-and-dry-skin.jpg'
+featured: true
 date: 'Mar 29 2022'
 pCate: 'Skincare Blog'
 cate: 'Skincare'
@@ -26,8 +27,6 @@ author_social:
         icon: fas fa-link
         url: https://linkedin.com
 tags: 
-    - Serum
-    - Moisturize
     - Skincare
     - Product Review
 

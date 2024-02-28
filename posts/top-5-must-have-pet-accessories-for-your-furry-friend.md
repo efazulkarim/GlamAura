@@ -29,7 +29,7 @@ author_social:
 tags:
   - Pet Accessories
   - Pet Supplies
-  - Reviews
+  - Product Reviews
 ---
 
 # Top 5 Must-Have Pet Accessories for Your Furry Friend!
