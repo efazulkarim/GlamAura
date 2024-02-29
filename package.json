@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@datadog/browser-rum": "^5.10.0",
     "@emailjs/browser": "^3.6.2",
     "@react-aria/ssr": "^3.9.2",
     "bootstrap": "^5.2.3",
