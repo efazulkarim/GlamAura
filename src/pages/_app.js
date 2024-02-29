@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import '../styles/style.scss';
 import ColorSwitcher from '../common/elements/color-switcher/ColorSwitcher';
 import { datadogRum } from '@datadog/browser-rum';
-
+import { useEffect } from 'react';
 
 export default function MyApp({ Component, pageProps }) {
   useEffect(() => {
