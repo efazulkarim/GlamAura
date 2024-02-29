@@ -69,7 +69,7 @@ const HeaderTwo = ({ darkLogo, lightLogo, postData }) => {
                       className="dark-logo"
                       width={141}
                       height={37}
-                      src={(colorMode === "Dark" ? lightLogo || "/images/logo/glam.png" : darkLogo || "/images/logo/glam_w.png") || "/images/logo/glam.png"}
+                      src={(colorMode === "Dark" ? lightLogo || "/images/glam.png" : darkLogo || "/images/glam_w.png") || "/images/glam.png"}
                       alt="GlamAura"
                     />
                   </a>

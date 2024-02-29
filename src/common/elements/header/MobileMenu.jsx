@@ -31,7 +31,7 @@ const MobileMenu = ({ menuShow, menuHide }) => {
                                     className="dark-logo"
                                     width={141}
                                     height={37}
-                                    src={colorMode === "Dark" ? "/images/logo/glam.png" : "/images/logo/glam.png"}
+                                    src={colorMode === "Dark" ? "/images/glam.png" : "/images/glam_w.png"}
                                     alt=""
                                 />
                             </a>

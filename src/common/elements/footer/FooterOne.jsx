@@ -224,7 +224,7 @@ const FooterOne = () => {
                       className="dark-logo"
                       width={141}
                       height={37}
-                      src="/images/logo/glam_w.png"
+                      src="/images/glam_w.png"
                       alt="GlamAura logo"
                     />
                   </a>

@@ -14,7 +14,7 @@ const FooterTwo = () => {
                 <Link href="/">
                   <a>
                     <Image
-                      src="/images/logo/glam.png"
+                      src="/images/glam.png"
                       alt="Logo Images"
                       height={35}
                       width={134}
