@@ -3,5 +3,8 @@ module.exports = {
     locales: ["en"],
     defaultLocale: "en",
   },
+  images: {
+    domains: ['localhost', 'glamaura.me'],
+  },
   output: "standalone",
 };
