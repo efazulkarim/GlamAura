@@ -3,7 +3,7 @@ postFormat: 'standard'
 title: 'Unveil Radiant Skin: Your Everyday Step-by-Step Skincare Guide'
 featureImg: '/images/posts/dull-and-dry-skin.jpg'
 featured: true
-date: 'Mar 29 2022'
+date: 'Mar 29 2023'
 pCate: 'Skincare Blog'
 cate: 'Skincare'
 cate_img: '/images/posts/category/skincare.webp'

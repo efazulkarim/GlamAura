@@ -2,7 +2,7 @@
 postFormat: 'standard'
 title: 'The Art of Mixing and Matching Patterns Like a Pro'
 featureImg: '/images/posts/post-tech-10.webp'
-date: 'Jul 22 2022'
+date: 'Jul 22 2023'
 pCate: 'Beauty Blog'
 cate: 'Shopping'
 cate_img: '/images/posts/category/shopping.webp'
@@ -10,7 +10,7 @@ post_views: '300K Views'
 read_time: '4 min read'
 author_name: 'Rose Mary'
 author_img: '/images/posts/author/author-b2.webp'
-author_designation: 'Sr. UX Designer'
+author_designation: 'Fashion Enthusiast'
 author_bio: 'At 29 years old, my favorite compliment is being told that I look like my mom. Seeing myself in her image, like this daughter up top, makes me so proud of how far I’ve come, and so thankful for where I come from.'
 
 tags: 

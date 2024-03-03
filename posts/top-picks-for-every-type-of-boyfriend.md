@@ -4,7 +4,7 @@ title: 'Gift Guide for Every Type of Boyfriend : 2024 Guide'
 featureImg: '/images/posts/Gift.jpg'
 featured: true
 slidePost: true
-date: 'Jul 22 2022'
+date: 'Jan 22 2024'
 pCate: 'Beauty Blog'
 cate: 'Gifts'
 cate_img: '/images/posts/category/gifts.webp'
@@ -18,7 +18,6 @@ author_bio: 'At 29 years old, my favorite compliment is being told that I look l
 tags: 
     - Gifts
     - Product Review
-    
 
 ---
 

@@ -77,7 +77,6 @@ export async function getStaticProps({ params }) {
 		'author_name',
 		'post_views',
 		'read_time',
-		'author_social',
 	])
 
 
