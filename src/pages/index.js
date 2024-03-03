@@ -2,7 +2,7 @@
 import dynamic from 'next/dynamic';
 import HeadTitle from '../common/elements/head/HeadTitle';
 import { getAllPosts } from '../../lib/api';
-const HeaderOne = dynamic(() => import('../common/elements/header/HeaderOne'));
+import HeaderOne from "../common/elements/header/HeaderOne";
 const PostSectionOne = dynamic(() => import('../common/components/post/PostSectionOne'));
 const PostSectionTwo = dynamic(() => import('../common/components/post/PostSectionTwo'));
 const PostSectionThree = dynamic(() => import('../common/components/post/PostSectionThree'));
@@ -10,7 +10,7 @@ const CategoryList = dynamic(() => import('../common/components/category/Categor
 const PostSectionFour = dynamic(() => import('../common/components/post/PostSectionFour'));
 const PostSectionFive = dynamic(() => import('../common/components/post/PostSectionFive'));
 const SliderOne = dynamic(() => import('../common/components/slider/SliderOne'));
-const FooterTwo = dynamic(() => import('./../common/elements/footer/FooterTwo'));
+import FooterTwo from "../common/elements/footer/FooterTwo";
 
 
 const HomeDefault = ({ allPosts }) => {

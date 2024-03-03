@@ -1,16 +1,19 @@
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/router';
+import dynamic from 'next/dynamic';
 import { getAllPosts } from '../../lib/api';
 import { slugify, SortingByDate } from "../common/utils";
-import PostSectionFour from "../common/components/post/PostSectionFour";
-import SocialOne from "../common/components/social/SocialOne";
-import FooterThree from "../common/elements/footer/FooterThree";
-import HeadTitle from "../common/elements/head/HeadTitle";
-import HeaderFour from "../common/elements/header/HeaderFour";
-import CategoryListSlide from '../common/components/category/CategoryListSlide';
-import PostSectionThree from '../common/components/post/PostSectionThree';
-import PostSectionSeven from '../common/components/post/PostSectionSeven';
-import PostSectionTen from '../common/components/post/PostSectionTen';
-import PostSectionTwelve from '../common/components/post/PostSectionTwelve';
+
+const HeadTitle = dynamic(() => import("../common/elements/head/HeadTitle"));
+const HeaderFour = dynamic(() => import("../common/elements/header/HeaderFour"));
+const PostSectionFour = dynamic(() => import("../common/components/post/PostSectionFour"));
+const SocialOne = dynamic(() => import("../common/components/social/SocialOne"));
+const FooterThree = dynamic(() => import("../common/elements/footer/FooterThree"));
+const CategoryListSlide = dynamic(() => import('../common/components/category/CategoryListSlide'));
+const PostSectionThree = dynamic(() => import('../common/components/post/PostSectionThree'));
+const PostSectionSeven = dynamic(() => import('../common/components/post/PostSectionSeven'));
+const PostSectionTen = dynamic(() => import('../common/components/post/PostSectionTen'));
+const PostSectionTwelve = dynamic(() => import('../common/components/post/PostSectionTwelve'));
+
 
 const PetsBlog = ({ allPosts }) => {
 

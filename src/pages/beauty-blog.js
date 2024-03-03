@@ -1,15 +1,23 @@
-import { useRouter } from 'next/router'
-import HeaderTwo from "../common/elements/header/HeaderTwo";
+import { useRouter } from 'next/router';
+import dynamic from 'next/dynamic';
 import { getAllPosts } from '../../lib/api';
-import PostSectionFour from "../common/components/post/PostSectionFour";
-import PostSectionThree from "../common/components/post/PostSectionThree";
-import CategoryListSlide from "../common/components/category/CategoryListSlide";
-import PostSectionSeven from "../common/components/post/PostSectionSeven";
-import PostSectionTwo from "../common/components/post/PostSectionTwo";
-import PostSectionEight from "../common/components/post/PostSectionEight";
-import HeadTitle from "../common/elements/head/HeadTitle";
 import { slugify } from '../common/utils';
+
+// Statically import essential components
+import HeaderTwo from "../common/elements/header/HeaderTwo";
+import HeadTitle from "../common/elements/head/HeadTitle";
 import FooterTwo from '../common/elements/footer/FooterTwo';
+
+// Dynamic imports for non-essential or below-the-fold components
+const PostSectionFour = dynamic(() => import("../common/components/post/PostSectionFour"));
+const PostSectionThree = dynamic(() => import("../common/components/post/PostSectionThree"));
+const CategoryListSlide = dynamic(() => import("../common/components/category/CategoryListSlide"));
+const PostSectionSeven = dynamic(() => import("../common/components/post/PostSectionSeven"));
+const PostSectionTwo = dynamic(() => import("../common/components/post/PostSectionTwo"));
+const PostSectionEight = dynamic(() => import("../common/components/post/PostSectionEight"));
+
+// ...rest of your component and page logic
+
 
 
 const Beauty = ({ allPosts }) => {

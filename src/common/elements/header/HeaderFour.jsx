@@ -105,7 +105,7 @@ const HeaderFour = ({ darkLogo, lightLogo, postData }) => {
                           className="dark-logo"
                           width={141}
                           height={37}
-                          src={(colorMode === "Dark" ? lightLogo || "/images/glam.png" : darkLogo || "/images/glam.png") || "/images/glam.png"}
+                          src={(colorMode === "Dark" ? lightLogo || "/images/glam.png" : darkLogo || "/images/glam_w.png") }
                           alt=""
                         />
                       </a>

@@ -1,17 +1,25 @@
-import { useRouter } from 'next/router'
-import InstagramOne from "../common/components/instagram/InstagramOne";
-import SocialOne from "../common/components/social/SocialOne";
-import FooterThree from "../common/elements/footer/FooterThree";
-import HeaderTwo from "../common/elements/header/HeaderTwo";
+import { useRouter } from 'next/router';
+import dynamic from 'next/dynamic';
 import { getAllPosts } from '../../lib/api';
-import PostSectionFour from "../common/components/post/PostSectionFour";
-import PostSectionThree from "../common/components/post/PostSectionThree";
-import CategoryListSlide from "../common/components/category/CategoryListSlide";
-import PostSectionSeven from "../common/components/post/PostSectionSeven";
-import PostSectionTwo from "../common/components/post/PostSectionTwo";
-import PostSectionEight from "../common/components/post/PostSectionEight";
-import HeadTitle from "../common/elements/head/HeadTitle";
 import { slugify } from '../common/utils';
+
+// Static imports for essential components
+import HeaderTwo from "../common/elements/header/HeaderTwo";
+import HeadTitle from "../common/elements/head/HeadTitle";
+import FooterThree from "../common/elements/footer/FooterThree";
+
+// Dynamic imports for non-essential components
+const InstagramOne = dynamic(() => import("../common/components/instagram/InstagramOne"));
+const SocialOne = dynamic(() => import("../common/components/social/SocialOne"));
+const PostSectionFour = dynamic(() => import("../common/components/post/PostSectionFour"));
+const PostSectionThree = dynamic(() => import("../common/components/post/PostSectionThree"));
+const CategoryListSlide = dynamic(() => import("../common/components/category/CategoryListSlide"));
+const PostSectionSeven = dynamic(() => import("../common/components/post/PostSectionSeven"));
+const PostSectionTwo = dynamic(() => import("../common/components/post/PostSectionTwo"));
+const PostSectionEight = dynamic(() => import("../common/components/post/PostSectionEight"));
+
+// ...rest of your component and page logic
+
 
 const ApparelBlog = ({ allPosts }) => {
   const router = useRouter();

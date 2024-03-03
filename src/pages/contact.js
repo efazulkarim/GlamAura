@@ -1,14 +1,18 @@
-import InstagramOne from "../common/components/instagram/InstagramOne";
-import BreadcrumbTwo from "../common/elements/breadcrumb/breadcrumbTwo";
-import FooterThree from "../common/elements/footer/FooterThree";
-import HeaderOne from "../common/elements/header/HeaderOne";
+import dynamic from 'next/dynamic';
 import { getAllPosts } from '../../lib/api';
-import WidgetCategory from "../common/components/sidebar/WidgetCategory";
-import WidgetSearch from "../common/components/sidebar/WidgetSearch";
-import WidgetPostList from "../common/components/sidebar/WidgetPostList";
-import WidgetSocialShare from "../common/components/sidebar/WidgetSocialShare";
-import FormOne from "../common/components/form/FormOne";
-import HeadTitle from "../common/elements/head/HeadTitle";
+
+// Dynamic imports
+const InstagramOne = dynamic(() => import("../common/components/instagram/InstagramOne"));
+const BreadcrumbTwo = dynamic(() => import("../common/elements/breadcrumb/BreadcrumbTwo"));
+const FooterThree = dynamic(() => import("../common/elements/footer/FooterThree"));
+const HeaderOne = dynamic(() => import("../common/elements/header/HeaderOne"));
+const WidgetCategory = dynamic(() => import("../common/components/sidebar/WidgetCategory"));
+const WidgetSearch = dynamic(() => import("../common/components/sidebar/WidgetSearch"));
+const WidgetPostList = dynamic(() => import("../common/components/sidebar/WidgetPostList"));
+const WidgetSocialShare = dynamic(() => import("../common/components/sidebar/WidgetSocialShare"));
+const FormOne = dynamic(() => import("../common/components/form/FormOne"));
+const HeadTitle = dynamic(() => import("../common/elements/head/HeadTitle"));
+
 
 const ContactUs = ({allPosts}) => {
     return ( 

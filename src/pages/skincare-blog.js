@@ -1,13 +1,21 @@
 import { getAllPosts } from '../../lib/api';
-import HeaderThree from "../common/elements/header/HeaderThree";
-import HeadTitle from "../common/elements/head/HeadTitle";
 import { slugify, SortingByDate } from "../common/utils";
-import PostSectionNine from '../common/components/post/PostSectionNine';
-import CategoryListSlide from '../common/components/category/CategoryListSlide';
-import PostSectionFour from '../common/components/post/PostSectionFour';
-import PostSectionTen from '../common/components/post/PostSectionTen';
-import PostSectionEleven from '../common/components/post/PostSectionEleven';
+import dynamic from 'next/dynamic';
+
+// Statically import essential components
+import HeadTitle from "../common/elements/head/HeadTitle";
+import HeaderThree from "../common/elements/header/HeaderThree";
 import FooterTwo from "../common/elements/footer/FooterTwo";
+
+// Dynamically import non-essential components
+const PostSectionNine = dynamic(() => import('../common/components/post/PostSectionNine'), { ssr: false });
+const CategoryListSlide = dynamic(() => import('../common/components/category/CategoryListSlide'), { ssr: false });
+const PostSectionFour = dynamic(() => import('../common/components/post/PostSectionFour'), { ssr: false });
+const PostSectionTen = dynamic(() => import('../common/components/post/PostSectionTen'), { ssr: false });
+const PostSectionEleven = dynamic(() => import('../common/components/post/PostSectionEleven'), { ssr: false });
+
+// ...rest of your component and getStaticProps
+
 
 const Skincare = ({ allPosts }) => {
 
