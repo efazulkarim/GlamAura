@@ -1,6 +1,6 @@
 ---
 postFormat: 'standard'
-title: 'Flutter'
+title: 'Essential Makeup: A Beginners Guide to Must-Have Products'
 featureImg: '/images/posts/makeup.jpg'
 date: 'Feb 15 2022'
 pCate: 'Beauty Blog'

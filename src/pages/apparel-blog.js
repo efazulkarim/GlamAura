@@ -36,7 +36,7 @@ const ApparelBlog = ({ allPosts }) => {
       <PostSectionEight postData={seoPost} />
       <PostSectionTwo
         postData={allPosts}
-        adBanner={true}
+        /* adBanner={true} */
         headingTitle="What's new at GlamAura"
       />
       <PostSectionSeven postData={allPosts} />
