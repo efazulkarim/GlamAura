@@ -79,7 +79,7 @@ const HeaderOne = ({ pClass, darkLogo, lightLogo, postData }) => {
                                         </div>
                                     </form>
                                 </div>
-                                <ul className="metabar-block">
+                                {/*  <ul className="metabar-block">
                                     <li className="icon">
                                         <Link href="#">
                                             <a>
@@ -106,7 +106,7 @@ const HeaderOne = ({ pClass, darkLogo, lightLogo, postData }) => {
                                             </a>
                                         </Link>
                                     </li>
-                                </ul>
+                                </ul> */}
                                 {/* Start Hamburger Menu  */}
                                 <div className="hamburger-menu d-block d-xl-none">
                                     <div className="hamburger-inner">

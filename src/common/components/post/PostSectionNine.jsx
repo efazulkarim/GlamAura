@@ -65,6 +65,7 @@ const PostSectionNine = ({ postData, bgColor }) => {
                               height={190}
                               width={285}
                               priority={true}
+                              layout="responsive"
                             />
                           </a>
                         </Link>

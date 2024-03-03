@@ -33,7 +33,7 @@ const Beauty = ({ allPosts }) => {
       <PostSectionSeven postData={allPosts} />
       <PostSectionThree postData={videoPost} heading="Featured Video" />
       <CategoryListSlide cateData={allPosts} />
-      <PostSectionFour postData={beautyPost} adBanner={true} />
+      <PostSectionFour postData={beautyPost} /* adBanner={true} */ />
 
 
       <FooterTwo />

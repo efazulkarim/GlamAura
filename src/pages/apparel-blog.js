@@ -34,7 +34,7 @@ const ApparelBlog = ({ allPosts }) => {
       <PostSectionSeven postData={allPosts} />
       <PostSectionThree postData={videoPost} heading="Featured Video" />
       <CategoryListSlide cateData={allPosts} />
-      <PostSectionFour postData={seoPost} adBanner={true} />
+      <PostSectionFour postData={seoPost} /* adBanner={true} */ />
       <SocialOne />
       <InstagramOne parentClass="bg-color-grey" />
       <FooterThree />

@@ -18,6 +18,7 @@ const WidgetPostList = ({ postData }) => {
                       height={100}
                       width={100}
                       priority={true}
+                      layout="responsive"
                     />
                   </a>
                 </Link>

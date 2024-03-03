@@ -14,6 +14,7 @@ const WidgetInstagramPost = () => {
 						height={105}
 						width={105}
 						alt="Instagram Images"
+							layout="responsive"
 					/>
 				 </a>
 			   </li>

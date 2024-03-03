@@ -96,6 +96,7 @@ const PostSectionSeven = ({ postData }) => {
                                         height={294}
                                         width={495}
                                         priority={true}
+                                         layout="responsive"
                                       />
                                     </a>
                                   </Link>
@@ -142,6 +143,7 @@ const PostSectionSeven = ({ postData }) => {
                                   height={660}
                                   width={705}
                                   priority={true}
+                                   layout="responsive"
                                 />
                               </a>
                             </Link>
@@ -177,6 +179,7 @@ const PostSectionSeven = ({ postData }) => {
                                     alt={firstPost.author_name}
                                     height={50}
                                     width={50}
+                                     layout="responsive"
                                   />
                                 </div>
                                 <div className="content">

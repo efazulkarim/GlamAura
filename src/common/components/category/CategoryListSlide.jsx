@@ -81,6 +81,7 @@ const slideSettings = {
                         alt={data.cate}
                         height={180}
                         width={180}
+                         layout="responsive"
                     />
                     </div>
                     <div className="content">

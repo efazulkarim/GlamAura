@@ -24,6 +24,7 @@ const PostSectionEight = ({ postData }) => {
                       height={600}
                       width={705}
                       priority={true}
+                       layout="responsive"
                     />
                   </a>
                 </Link>
