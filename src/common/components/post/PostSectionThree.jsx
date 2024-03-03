@@ -83,15 +83,7 @@ const PostSectionThree = ({ postData, adBanner, bgColor, heading }) => {
                       </ul>
                     </div>
                   </div>
-                  <ul className="social-share-transparent justify-content-end">
-                    {firstPost.author_social.map((social) =>(
-                      <li key={social.url}>
-                        <a href={social.url}>
-                          <i className={social.icon} />
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
+                  
                 </div>
               </div>
             </div>

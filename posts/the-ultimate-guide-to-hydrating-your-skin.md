@@ -12,15 +12,7 @@ read_time: '3 min read'
 author_name: 'Rose Mary'
 author_img: '/images/posts/author/author-b2.webp'
 author_bio: 'A skincare enthusiast with a passion for sharing the most effective products and routines. My journey is about finding beauty solutions that truly make a difference.'
-author_social:
-    - icon: fab fa-facebook-f
-      url: https://facebook.com/
-    - icon: fab fa-twitter
-      url: https://twitter.com
-    - icon: fab fa-instagram
-      url: https://instagram.com
-    - icon: fas fa-link
-      url: https://linkedin.com
+
 tags: 
     - Beauty
     - Health

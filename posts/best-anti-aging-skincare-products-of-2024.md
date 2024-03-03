@@ -12,15 +12,7 @@ read_time: '4 min read'
 author_name: 'Rose Mary'
 author_img: '/images/posts/author/author-b3.webp'
 author_bio: 'A skincare enthusiast with a passion for sharing the most effective products and routines. My journey is about finding beauty solutions that truly make a difference.'
-author_social:
-    - icon: fab fa-facebook-f
-      url: https://facebook.com/rosemaryskincare
-    - icon: fab fa-twitter
-      url: https://twitter.com/rosemarycare
-    - icon: fab fa-instagram
-      url: https://instagram.com/rosemaryglow
-    - icon: fas fa-link
-      url: https://linkedin.com/in/rosemaryskincare
+
 tags: 
     - Anti-aging
     - Skincare
