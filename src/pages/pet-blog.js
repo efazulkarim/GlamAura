@@ -1,7 +1,6 @@
 import { useRouter } from 'next/router'
 import { getAllPosts } from '../../lib/api';
 import { slugify, SortingByDate } from "../common/utils";
-import InstagramOne from "../common/components/instagram/InstagramOne";
 import PostSectionFour from "../common/components/post/PostSectionFour";
 import SocialOne from "../common/components/social/SocialOne";
 import FooterThree from "../common/elements/footer/FooterThree";
@@ -31,7 +30,6 @@ const PetsBlog = ({ allPosts }) => {
       <CategoryListSlide cateData={allPosts} />
       <PostSectionFour postData={lifestylePost} />
       <SocialOne />
-      <InstagramOne parentClass="bg-color-grey" />
       <FooterThree />
     </>
   );
