@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "generate-sitemap": "node generate-sitemap.js"
   },
   "dependencies": {
     "@datadog/browser-rum": "^5.10.0",
