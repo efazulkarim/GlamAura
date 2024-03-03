@@ -11,10 +11,10 @@ import HeadTitle from "../../common/elements/head/HeadTitle";
 
 
 const AuthorArchive = ({ authorData, allPosts }) => {
-  
+
     return (
         <>
-        <HeadTitle pageTitle="Author Archive" />
+            <HeadTitle pageTitle="Author Archive" />
             <HeaderOne postData={allPosts} />
             <div className="axil-author-area axil-author-banner bg-color-grey">
                 <div className="container">
@@ -42,11 +42,7 @@ const AuthorArchive = ({ authorData, allPosts }) => {
                                         </div>
                                         <div className="content">
                                             <p className="b1 description">{authorData[0].author_bio}</p>
-                                            <ul className="social-share-transparent size-md">
-                                                {authorData[0].author_social.map((social) => (
-                                                    <li key={social.url}><a href={social.url}><i className={social.icon} /></a></li>
-                                                ))}
-                                            </ul>
+
                                         </div>
                                     </div>
                                 </div>
@@ -65,10 +61,10 @@ const AuthorArchive = ({ authorData, allPosts }) => {
                             </div>
                         </div>
                         <div className="col-lg-8 col-xl-8">
-                            <PostLayoutTwo dataPost={authorData} show="5"/>
+                            <PostLayoutTwo dataPost={authorData} show="5" />
                         </div>
                         <div className="col-lg-4 col-xl-4 mt_md--40 mt_sm--40">
-                            <SidebarOne dataPost={allPosts}/>
+                            <SidebarOne dataPost={allPosts} />
                         </div>
                     </div>
                 </div>
@@ -98,7 +94,7 @@ export async function getStaticProps({ params }) {
         'author_img',
         'author_designation',
         'author_bio',
-        'author_social'
+
     ]);
 
     const getCategoryData = allPosts.filter(post => slugify(post.author_name) === postParams);
