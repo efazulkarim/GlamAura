@@ -8,11 +8,11 @@ import { useEffect } from 'react';
 export default function MyApp({ Component, pageProps }) {
   useEffect(() => {
     datadogRum.init({
-      applicationId: '946d3d57-c2f1-40a4-aece-065dbd419e01',
-      clientToken: 'pubd04b086929aee9e7a57b62731d0f91ea',
+      applicationId: '491e0737-1ea0-4e16-ba03-846251658567',
+      clientToken: 'pubec84b273ee10c2d47ace33cbb44b847a',
       site: 'us5.datadoghq.com',
-      service: 'glaumaura_blog',
-      env: process.env.NEXT_PUBLIC_DATADOG_ENV,
+      service: 'glamaura',
+      env: 'production',
       sessionSampleRate: 100,
       sessionReplaySampleRate: 20,
       trackUserInteractions: true,

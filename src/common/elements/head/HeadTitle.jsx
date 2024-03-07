@@ -10,7 +10,7 @@ const HeadTitle = ({ pageTitle }) => {
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
             <meta name="robots" content="index, follow" />
             <link rel="icon" type="image/png" href={`${process.env.NODE_ENV === 'production' ? process.env.NEXT_PUBLIC_BASEPATH ?? '' : ''}/favicon.png`} />
-            <meta property="og:title" content="GlamAura - Women's Lifestyle & Empowerment" />
+            <meta property="og:title" content="GlamAura - Women's Fashion & Skincare" />
             <meta property="og:description" content="Explore top trends in skincare, fashion, beauty, and more with GlamAura. Your go-to source for empowering women through style and self-care." />
             <meta property="og:image" content={`${process.env.NODE_ENV === 'production' ? process.env.NEXT_PUBLIC_BASEPATH ?? '' : ''}/social-preview.png`} />
             <meta property="og:type" content="website" />
