@@ -5,9 +5,9 @@ GlamAura is an elegant, open-source magazine blog template built with Next.js, B
 
 ## Features
 
-- **Next.js**: Efficient, server-side rendered pages and static site generation capabilities.
-- **Bootstrap**: A powerful front-end framework for faster and easier web development.
-- **Markdown**: Simplify your content management with Markdown formatting.
+- Next.js: Efficient, server-side rendered pages and static site generation capabilities.
+- Bootstrap: A powerful front-end framework for faster and easier web development.
+- Markdown: Simplify your content management with Markdown formatting.
 
 ## Demo
 
