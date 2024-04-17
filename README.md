@@ -11,7 +11,7 @@ GlamAura is an elegant, open-source magazine blog template built with Next.js, B
 
 ## Demo
 
-Check out the live demo here: [https://glamaura.me]
+Check out the live demo here: https://glamaura.me
 
 ## Getting Started
 
